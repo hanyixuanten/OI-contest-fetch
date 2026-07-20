@@ -1,14 +1,6 @@
 {
-  "generated_at": 1784551685,
+  "generated_at": 1784561316,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Beginner Contest 463",
-      "start_time": 1781956800,
-      "end_time": 1781962800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/abc463"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Heuristic Contest 067",
