@@ -86,6 +86,10 @@ define('JSON_URL', 'https://raw.githubusercontent.com/hanyixuanten/OI-contest-fe
 
 如果使用 GitHub Actions，请在运行脚本前安装 Python 依赖。
 
+## 开发说明
+
+AI coding agents 和维护者在修改比赛提供商、输出契约、工作流行为或文档时，应遵循 [AGENTS.md](AGENTS.md)。
+
 ## 注意事项
 
 - AtCoder 使用 AtCoder Problems API；在需要时会回退解析 AtCoder 官方比赛页面以获取即将开始的比赛。

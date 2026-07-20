@@ -86,6 +86,10 @@ A typical automation flow is:
 
 For GitHub Actions, install the Python dependencies before running the script.
 
+## Development Notes
+
+AI coding agents and maintainers should follow [AGENTS.md](AGENTS.md) when changing providers, output contracts, workflow behavior, or documentation.
+
 ## Notes
 
 - AtCoder uses the AtCoder Problems API and falls back to the official AtCoder contest page for upcoming contests when needed.
