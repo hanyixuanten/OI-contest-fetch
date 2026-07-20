@@ -222,6 +222,7 @@ function contest_value($contest, $key, $default) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php echo h($t['page_title']); ?></title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 <style>
   body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f7fa; margin: 0; padding: 20px; }
   .container { max-width: 900px; margin: 0 auto; }
