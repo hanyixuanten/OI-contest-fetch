@@ -1,9 +1,13 @@
+<?php
+// 这里可以留空，或者添加一些 PHP 逻辑，但不需要。
+// 下面的 HTML 是直接输出的静态页面。
+?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>近期编程竞赛</title>
+<title>编程竞赛日程</title>
 <style>
   body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f7fa; margin: 0; padding: 20px; }
   .container { max-width: 900px; margin: 0 auto; }
@@ -31,10 +35,13 @@
 <body>
 <div class="container">
   <h1>📅 即将到来的编程竞赛</h1>
-  <div id="contest-list"></div>
+  <div id="contest-list">加载中...</div>
 </div>
 
 <script>
+// 请将下面的 URL 替换为你的仓库 Raw 文件地址
+const DATA_URL = "https://raw.githubusercontent.com/hanyixuanten/OI-contest-fetch/master/contests.json";
+
 const PLATFORM_CLASS = {
   "Codeforces": "cf",
   "AtCoder": "atc",
@@ -57,22 +64,32 @@ function calcCountdown(startTs) {
 }
 
 async function load() {
-  const res = await fetch("contests.json");
-  const contests = await res.json();
   const list = document.getElementById("contest-list");
-  list.innerHTML = contests.map(c => {
-    const cls = PLATFORM_CLASS[c.platform] || "";
-    return `
-      <a href="${c.url}" target="_blank" class="card">
-        <span class="platform ${cls}">${c.platform}</span>
-        <div class="info">
-          <div class="title">${c.title}</div>
-          <div class="time">${formatTime(c.start_time)} ~ ${formatTime(c.end_time)}</div>
-        </div>
-        <div class="countdown" data-start="${c.start_time}">${calcCountdown(c.start_time)}</div>
-      </a>
-    `;
-  }).join("");
+  try {
+    const res = await fetch(DATA_URL);
+    if (!res.ok) throw new Error("数据加载失败");
+    const contests = await res.json();
+    if (!contests.length) {
+      list.innerHTML = "<p style='text-align:center'>暂无即将开始的赛事</p>";
+      return;
+    }
+    list.innerHTML = contests.map(c => {
+      const cls = PLATFORM_CLASS[c.platform] || "";
+      return `
+        <a href="${c.url}" target="_blank" class="card">
+          <span class="platform ${cls}">${c.platform}</span>
+          <div class="info">
+            <div class="title">${c.title}</div>
+            <div class="time">${formatTime(c.start_time)} ~ ${formatTime(c.end_time)}</div>
+          </div>
+          <div class="countdown" data-start="${c.start_time}">${calcCountdown(c.start_time)}</div>
+        </a>
+      `;
+    }).join("");
+  } catch (e) {
+    list.innerHTML = "<p style='text-align:center; color:red;'>赛事数据暂时无法加载，请稍后再试</p>";
+    console.error(e);
+  }
 }
 
 // 每秒更新倒计时
