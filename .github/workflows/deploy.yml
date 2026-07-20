@@ -2,7 +2,7 @@ name: Update Contests & Commit
 
 on:
   schedule:
-    - cron: '*/30 * * * *'   # 每30分钟执行一次
+    - cron: '*/5 * * * *'   # 每5分钟执行一次
   workflow_dispatch:          # 允许手动触发
 
 jobs:
@@ -31,6 +31,6 @@ jobs:
           git config --global user.email "actions@github.com"
           git add contests.json
           git diff --staged --quiet || (
-            git commit -m "Update contests.json [skip ci]"
+            git commit -m "Update contests.json"
             git push
           )
