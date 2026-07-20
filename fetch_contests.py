@@ -3,6 +3,7 @@ import json
 import time
 import re
 from datetime import datetime, timezone
+from urllib.parse import urljoin, urlparse, parse_qs
 from bs4 import BeautifulSoup
 
 # ---------- 工具函数 ----------
@@ -62,6 +63,24 @@ MONTH_MAP = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
 
 def parse_atcoder_time(text):
     return int(datetime.strptime(text.strip(), "%Y-%m-%d %H:%M:%S%z").timestamp())
+
+def parse_uoj_time(text):
+    return int(datetime.strptime(text.strip(), "%Y-%m-%d %H:%M:%S").replace(tzinfo=timezone.utc).timestamp()) - 8 * 3600
+
+def parse_uoj_duration(time_url, duration_text):
+    params = parse_qs(urlparse(time_url).query)
+    seconds = 0
+    if params.get("ah"):
+        seconds += int(float(params["ah"][0]) * 3600)
+    if params.get("am"):
+        seconds += int(float(params["am"][0]) * 60)
+    if seconds:
+        return seconds
+
+    match = re.search(r"([\d.]+)\s*小时", duration_text)
+    if match:
+        return int(float(match.group(1)) * 3600)
+    return 0
 
 def infer_usaco_year(season, month_num):
     start_year, end_year = map(int, season.split("-"))
@@ -201,55 +220,39 @@ def fetch_usaco(include_all=False):
         print(f"USACO error: {e}")
         return []
 
-# ---------- 洛谷 ----------
-def fetch_luogu(include_all=False, min_end_time=None):
-    url = "https://www.luogu.com.cn/contest/list"
-    headers = {
-        **HEADERS,
-        "Accept": "application/json, text/plain, */*",
-        "Referer": "https://www.luogu.com.cn/contest/list",
-        "X-Requested-With": "XMLHttpRequest",
-        "x-lentille-request": "content-only"
-    }
+# ---------- UOJ ----------
+def fetch_uoj(include_all=False, min_end_time=None):
+    url = "https://uoj.ac/contests"
     try:
-        session = requests.Session()
-        session.headers.update(headers)
-        session.get("https://www.luogu.com.cn/contest/list", timeout=15)
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
         contests = []
         now = now_ts()
-        page = 1
-        total = None
-        while True:
-            resp = session.get(url, params={"page": page, "_contentOnly": 1}, timeout=15)
-            resp.raise_for_status()
-            data = resp.json()
-            if data.get("status") != 200 and data.get("code") != 200:
-                return contests
-            contest_data = data.get("data") or data.get("currentData") or {}
-            page_data = contest_data.get("contests", {})
-            result = page_data.get("result", [])
-            if total is None:
-                total = page_data.get("count", len(result))
-            if not result:
-                break
-            for c in result:
-                # endTime 是秒级时间戳；默认只保留尚未结束的比赛，全量模式保留全部
-                if (include_all and (min_end_time is None or c["endTime"] >= min_end_time)) or c["endTime"] > now:
-                    contests.append(make_contest(
-                        "洛谷",
-                        c["name"],
-                        c["startTime"],
-                        c["endTime"],
-                        f"https://www.luogu.com.cn/contest/{c['id']}"
-                    ))
-            if include_all and min_end_time is not None and max(c["endTime"] for c in result) < min_end_time:
-                break
-            if not include_all or page * page_data.get("perPage", len(result)) >= total:
-                break
-            page += 1
+        for row in soup.select("table tr"):
+            cols = row.find_all("td")
+            if len(cols) < 3:
+                continue
+            contest_link = cols[0].find("a", href=re.compile(r"^/contest/\d+$"))
+            time_link = cols[1].find("a", href=True)
+            if not contest_link or not time_link:
+                continue
+            start = parse_uoj_time(time_link.get_text(strip=True))
+            duration = parse_uoj_duration(time_link["href"], cols[2].get_text(" ", strip=True))
+            if duration <= 0:
+                continue
+            end = start + duration
+            if (include_all and (min_end_time is None or end >= min_end_time)) or end > now:
+                contests.append(make_contest(
+                    "UOJ",
+                    contest_link.get_text(strip=True),
+                    start,
+                    end,
+                    urljoin("https://uoj.ac", contest_link["href"])
+                ))
         return contests
     except Exception as e:
-        print(f"Luogu error: {e}")
+        print(f"UOJ error: {e}")
         return []
 
 # ---------- 主逻辑 ----------
@@ -260,7 +263,7 @@ def main():
     all_contests.extend(fetch_codeforces())
     all_contests.extend(fetch_atcoder())
     all_contests.extend(fetch_usaco())
-    all_contests.extend(fetch_luogu())
+    all_contests.extend(fetch_uoj())
 
     all_contests.sort(key=lambda x: x["start_time"])
 
@@ -273,7 +276,7 @@ def main():
     recent_finished_contests.extend(fetch_codeforces(include_all=True))
     recent_finished_contests.extend(fetch_atcoder(include_all=True))
     recent_finished_contests.extend(fetch_usaco(include_all=True))
-    recent_finished_contests.extend(fetch_luogu(include_all=True, min_end_time=recent_finished_min_end_time))
+    recent_finished_contests.extend(fetch_uoj(include_all=True, min_end_time=recent_finished_min_end_time))
 
     recent_finished_contests = filter_recent_finished(deduplicate_contests(recent_finished_contests))
     recent_finished_contests.sort(key=lambda x: x["end_time"])

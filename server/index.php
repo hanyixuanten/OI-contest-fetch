@@ -67,7 +67,7 @@ $platform_class = [
     'Codeforces' => 'cf',
     'AtCoder'    => 'atc',
     'USACO'      => 'usaco',
-    '洛谷'        => 'luogu'
+    'UOJ'        => 'uoj'
 ];
 
 // 辅助函数：Unix 时间戳转中文日期
@@ -97,7 +97,7 @@ function format_time($ts) {
   .platform.cf { background: #1f8acb; }
   .platform.atc { background: #5b8c5a; }
   .platform.usaco { background: #e67e22; }
-  .platform.luogu { background: #e74c3c; }
+  .platform.uoj { background: #c0392b; }
   .info { flex: 1; margin-left: 15px; }
   .title { font-size: 18px; font-weight: 600; color: #2c3e50; }
   .time { font-size: 14px; color: #7f8c8d; margin-top: 5px; }

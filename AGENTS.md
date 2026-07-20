@@ -37,6 +37,8 @@ When removing a provider, remove or adjust the same surfaces so stale platform l
 
 ## Validation
 
+Do not proactively create a Python virtual environment unless the user asks for one. Run Python commands directly with `python`.
+
 After changing fetching, filtering, output shape, provider support, or workflow-generated files, run:
 
 ```bash
