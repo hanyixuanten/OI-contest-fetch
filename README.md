@@ -18,20 +18,25 @@ Running the fetch script writes JSON files to the repository root:
 - `contests.json`: contests that have not ended yet, including upcoming and currently running contests.
 - `contests_all.json`: contests that finished within the last 30 days.
 
-Each contest item has this shape:
+Each JSON file has this top-level shape. `generated_at` is the Unix timestamp in seconds when the file was written.
 
 ```json
 {
-  "platform": "AtCoder",
-  "title": "AtCoder Beginner Contest 468",
-  "start_time": 1784980800,
-  "end_time": 1784986800,
-  "status": "upcoming",
-  "url": "https://atcoder.jp/contests/abc468"
+  "generated_at": 1784550894,
+  "contests": [
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Beginner Contest 468",
+      "start_time": 1784980800,
+      "end_time": 1784986800,
+      "status": "upcoming",
+      "url": "https://atcoder.jp/contests/abc468"
+    }
+  ]
 }
 ```
 
-`start_time` and `end_time` are Unix timestamps in seconds. `status` can be one of:
+Each contest item is stored under `contests`. `start_time` and `end_time` are Unix timestamps in seconds. `status` can be one of:
 
 - `finished`
 - `running`
@@ -65,7 +70,7 @@ Total contests finished in last 30 days: 139
 
 ## Web Page
 
-`server/index.php` reads the public raw GitHub URLs for `contests.json` and `contests_all.json`, caches them locally for 5 minutes, and renders upcoming contests with a client-side countdown plus recently finished contests. The page detects the browser/system language and time zone, syncs them to cookies, and uses them for localized text and contest times on later page loads. Unsupported languages fall back to English.
+`server/index.php` reads the public raw GitHub URLs for `contests.json` and `contests_all.json`, caches them locally for 5 minutes, and renders upcoming contests with a client-side countdown plus recently finished contests. It also shows the JSON `generated_at` value as the last update time in the detected time zone. The page detects the browser/system language and time zone, syncs them to cookies, and uses them for localized text and contest times on later page loads. Unsupported languages fall back to English.
 
 If you deploy it yourself, update this constant in `server/index.php` if your repository path or branch changes:
 

@@ -54,6 +54,12 @@ def filter_recent_finished(contests, days=30):
         if contest["status"] == "finished" and contest["end_time"] >= earliest_end_ts
     ]
 
+def contest_payload(contests, generated_at):
+    return {
+        "generated_at": generated_at,
+        "contests": contests
+    }
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
                   "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -224,6 +230,7 @@ def fetch_nowcoder(include_all=False, min_end_time=None):
         return []
 
 def main():
+    generated_at = now_ts()
     all_contests = []
     all_contests.extend(fetch_codeforces())
     all_contests.extend(fetch_atcoder())
@@ -234,7 +241,7 @@ def main():
 
     # 直接写入仓库根目录
     with open("contests.json", "w", encoding="utf-8") as f:
-        json.dump(all_contests, f, ensure_ascii=False, indent=2)
+        json.dump(contest_payload(all_contests, generated_at), f, ensure_ascii=False, indent=2)
 
     recent_finished_contests = []
     recent_finished_min_end_time = recent_finished_cutoff()
@@ -247,7 +254,7 @@ def main():
     recent_finished_contests.sort(key=lambda x: x["end_time"])
 
     with open("contests_all.json", "w", encoding="utf-8") as f:
-        json.dump(recent_finished_contests, f, ensure_ascii=False, indent=2)
+        json.dump(contest_payload(recent_finished_contests, generated_at), f, ensure_ascii=False, indent=2)
 
     print(f"Total upcoming contests: {len(all_contests)}")
     print(f"Total contests finished in last 30 days: {len(recent_finished_contests)}")

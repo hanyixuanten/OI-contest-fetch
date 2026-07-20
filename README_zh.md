@@ -18,20 +18,25 @@
 - `contests.json`：尚未结束的比赛，包括尚未开始和正在进行中的比赛。
 - `contests_all.json`：最近 30 天内已经结束的比赛。
 
-每条比赛记录的结构如下：
+每个 JSON 文件的顶层结构如下。`generated_at` 是文件写入时的秒级 Unix 时间戳。
 
 ```json
 {
-  "platform": "AtCoder",
-  "title": "AtCoder Beginner Contest 468",
-  "start_time": 1784980800,
-  "end_time": 1784986800,
-  "status": "upcoming",
-  "url": "https://atcoder.jp/contests/abc468"
+  "generated_at": 1784550894,
+  "contests": [
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Beginner Contest 468",
+      "start_time": 1784980800,
+      "end_time": 1784986800,
+      "status": "upcoming",
+      "url": "https://atcoder.jp/contests/abc468"
+    }
+  ]
 }
 ```
 
-`start_time` 和 `end_time` 是秒级 Unix 时间戳。`status` 可能是以下值之一：
+比赛记录存放在 `contests` 数组中。`start_time` 和 `end_time` 是秒级 Unix 时间戳。`status` 可能是以下值之一：
 
 - `finished`：已结束
 - `running`：进行中
@@ -65,7 +70,7 @@ Total contests finished in last 30 days: 139
 
 ## 网页展示
 
-`server/index.php` 会读取公开的 GitHub Raw 地址中的 `contests.json` 和 `contests_all.json`，在本地缓存 5 分钟，并渲染带客户端倒计时的即将开始比赛，以及最近已结束的比赛。页面会识别浏览器/系统语言和时区，将其同步到 cookie，并在后续加载时用于本地化文案和比赛时间显示。不支持的语言会回退到英语。
+`server/index.php` 会读取公开的 GitHub Raw 地址中的 `contests.json` 和 `contests_all.json`，在本地缓存 5 分钟，并渲染带客户端倒计时的即将开始比赛，以及最近已结束的比赛。页面还会读取 JSON 中的 `generated_at`，按检测到的时区显示最后更新时间。页面会识别浏览器/系统语言和时区，将其同步到 cookie，并在后续加载时用于本地化文案和比赛时间显示。不支持的语言会回退到英语。
 
 如果你自行部署，并且仓库路径或分支发生变化，需要修改 `server/index.php` 中的这个常量：
 

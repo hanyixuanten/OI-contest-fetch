@@ -24,6 +24,7 @@ $translations = [
     'ended' => '已结束',
     'running' => '进行中',
     'timezone_label' => '时区',
+    'last_updated_label' => '最后更新时间',
     'day' => '天',
     'hour' => '时',
     'minute' => '分',
@@ -42,6 +43,7 @@ $translations = [
     'ended' => 'Ended',
     'running' => 'Running',
     'timezone_label' => 'Time zone',
+    'last_updated_label' => 'Last updated',
     'day' => 'd',
     'hour' => 'h',
     'minute' => 'm',
@@ -131,17 +133,40 @@ function fetch_and_cache($url, $cache_file, $ttl) {
     return $json;
 }
 
+function parse_contest_payload($json) {
+  $data = json_decode($json, true);
+  if (!is_array($data)) {
+    return false;
+  }
+
+  if (isset($data['contests']) && is_array($data['contests'])) {
+    return [
+      'generated_at' => isset($data['generated_at']) ? (int)$data['generated_at'] : 0,
+      'contests' => $data['contests']
+    ];
+  }
+
+  return [
+    'generated_at' => 0,
+    'contests' => $data
+  ];
+}
+
 // 获取赛事 JSON
 $contests_json = fetch_and_cache(JSON_URL, CACHE_FILE, CACHE_TTL);
 if ($contests_json === false) {
     $contests = [];
+    $contests_generated_at = 0;
     $error_msg = $t['load_error'];
 } else {
-    $contests = json_decode($contests_json, true);
-    if (!is_array($contests)) {
+    $contests_payload = parse_contest_payload($contests_json);
+    if ($contests_payload === false) {
         $contests = [];
+        $contests_generated_at = 0;
         $error_msg = $t['load_error'];
     } else {
+        $contests = $contests_payload['contests'];
+        $contests_generated_at = $contests_payload['generated_at'];
         $error_msg = '';
     }
 }
@@ -149,16 +174,22 @@ if ($contests_json === false) {
 $finished_contests_json = fetch_and_cache(FINISHED_JSON_URL, FINISHED_CACHE_FILE, CACHE_TTL);
 if ($finished_contests_json === false) {
   $finished_contests = [];
+  $finished_contests_generated_at = 0;
   $finished_error_msg = $t['finished_load_error'];
 } else {
-  $finished_contests = json_decode($finished_contests_json, true);
-  if (!is_array($finished_contests)) {
+  $finished_contests_payload = parse_contest_payload($finished_contests_json);
+  if ($finished_contests_payload === false) {
     $finished_contests = [];
+    $finished_contests_generated_at = 0;
     $finished_error_msg = $t['finished_load_error'];
   } else {
+    $finished_contests = $finished_contests_payload['contests'];
+    $finished_contests_generated_at = $finished_contests_payload['generated_at'];
     $finished_error_msg = '';
   }
 }
+
+$last_generated_at = max($contests_generated_at, $finished_contests_generated_at);
 
 // ========== 平台样式映射 ==========
 $platform_class = [
@@ -173,10 +204,10 @@ function h($value) {
 }
 
 // 辅助函数：Unix 时间戳按当前时区格式化
-function format_time($ts, $timezone) {
+function format_time($ts, $timezone, $include_seconds=false) {
   $date = new DateTime('@' . $ts);
   $date->setTimezone($timezone);
-  return $date->format('Y-m-d H:i');
+  return $date->format($include_seconds ? 'Y-m-d H:i:s' : 'Y-m-d H:i');
 }
 
 function platform_class_name($platform, $platform_class) {
@@ -225,6 +256,9 @@ function contest_value($contest, $key, $default) {
 <div class="container">
   <h1>📅 <?php echo h($t['heading']); ?></h1>
   <div class="meta"><?php echo h($t['timezone_label']); ?>: <span id="timezone-label"><?php echo h($current_timezone); ?></span></div>
+  <?php if ($last_generated_at > 0): ?>
+    <div class="meta"><?php echo h($t['last_updated_label']); ?>: <span id="last-updated" data-generated-at="<?php echo $last_generated_at; ?>"><?php echo h(format_time($last_generated_at, $timezone, true)); ?></span></div>
+  <?php endif; ?>
   <h2 class="section-title"><?php echo h($t['upcoming_title']); ?></h2>
   <?php if ($error_msg): ?>
     <div class="error"><?php echo h($error_msg); ?></div>
@@ -286,6 +320,7 @@ function contest_value($contest, $key, $default) {
 var translations = <?php echo json_encode($t, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT); ?>;
 var serverLanguage = <?php echo json_encode($current_lang); ?>;
 var serverTimezone = <?php echo json_encode($current_timezone); ?>;
+var generatedAt = <?php echo json_encode($last_generated_at); ?>;
 
 function cookieValue(name) {
   var parts = document.cookie ? document.cookie.split('; ') : [];
@@ -353,9 +388,34 @@ function formatDateTime(ts) {
   return '';
 }
 
+function formatDateTimeWithSeconds(ts) {
+  if (window.Intl && Intl.DateTimeFormat) {
+    return new Intl.DateTimeFormat(serverLanguage === 'en' ? 'en-US' : 'zh-CN', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false,
+      timeZone: serverTimezone
+    }).format(new Date(ts * 1000));
+  }
+  return '';
+}
+
 function updateTimes() {
   var timezoneLabel = document.getElementById('timezone-label');
   if (timezoneLabel) timezoneLabel.textContent = serverTimezone;
+
+  var lastUpdated = document.getElementById('last-updated');
+  if (lastUpdated) {
+    var generatedAtTs = parseInt(lastUpdated.getAttribute('data-generated-at') || generatedAt, 10);
+    var generatedAtText = formatDateTimeWithSeconds(generatedAtTs);
+    if (generatedAtText) {
+      lastUpdated.textContent = generatedAtText;
+    }
+  }
 
   var els = document.querySelectorAll('.time');
   els.forEach(function(el) {

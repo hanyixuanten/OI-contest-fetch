@@ -32,8 +32,8 @@ When removing a provider, remove or adjust the same surfaces so stale platform l
 
 ## Output Contracts
 
-- `contests.json` contains contests that have not ended yet: `upcoming` and `running`.
-- `contests_all.json` contains contests that finished within the last 30 days.
+- `contests.json` is an object with `generated_at` and `contests`; `contests` contains contests that have not ended yet: `upcoming` and `running`.
+- `contests_all.json` is an object with `generated_at` and `contests`; `contests` contains contests that finished within the last 30 days.
 - JSON timestamps are Unix timestamps in seconds.
 - Keep record keys stable unless the README files and server rendering are updated in the same change.
 
@@ -50,8 +50,8 @@ python fetch_contests.py
 Then inspect the generated files with `jq` when available, for example:
 
 ```bash
-jq 'group_by(.platform) | map({platform: .[0].platform, count: length})' contests.json
-jq 'group_by(.status) | map({status: .[0].status, count: length})' contests_all.json
+jq '.contests | group_by(.platform) | map({platform: .[0].platform, count: length})' contests.json
+jq '.contests | group_by(.status) | map({status: .[0].status, count: length})' contests_all.json
 ```
 
 For PHP-only presentation changes, also check that `server/index.php` still reads `contests.json` and handles unknown platforms with the default styling.
