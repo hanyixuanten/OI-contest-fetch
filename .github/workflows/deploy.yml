@@ -1,0 +1,40 @@
+name: Update Contests & Deploy
+
+on:
+  schedule:
+    # 每 30 分钟执行一次（可按需修改）
+    - cron: '*/30 * * * *'
+  workflow_dispatch:   # 允许手动触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Create public directory
+        run: mkdir -p public
+
+      - name: Fetch contests
+        run: python fetch_contests.py
+
+      - name: Copy index.html to public
+        run: cp index.html public/   # 如果 index.html 本来就在 public 内，则不需要此步
+
+      - name: Deploy to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./public/
+          server-dir: /public_html/contests/   # 改成你希望存放的目录
