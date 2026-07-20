@@ -2,6 +2,7 @@ import requests
 import json
 import time
 import re
+import html
 from datetime import datetime, timezone
 from urllib.parse import urljoin, urlparse, parse_qs
 from bs4 import BeautifulSoup
@@ -187,11 +188,47 @@ def fetch_uoj(include_all=False, min_end_time=None):
         print(f"UOJ error: {e}")
         return []
 
+# ---------- Nowcoder ----------
+def fetch_nowcoder(include_all=False, min_end_time=None):
+    url = "https://ac.nowcoder.com/acm/contest/vip-index"
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+        contests = []
+        now = now_ts()
+        for item in soup.select(".platform-item[data-json]"):
+            try:
+                data = json.loads(html.unescape(item["data-json"]))
+            except (TypeError, ValueError):
+                continue
+            contest_id = data.get("contestId")
+            title = data.get("contestName")
+            start = data.get("contestStartTime")
+            end = data.get("contestEndTime")
+            if not contest_id or not title or not start or not end:
+                continue
+            start = int(start) // 1000
+            end = int(end) // 1000
+            if (include_all and (min_end_time is None or end >= min_end_time)) or end > now:
+                contests.append(make_contest(
+                    "Nowcoder",
+                    title,
+                    start,
+                    end,
+                    f"https://ac.nowcoder.com/acm/contest/{contest_id}"
+                ))
+        return contests
+    except Exception as e:
+        print(f"Nowcoder error: {e}")
+        return []
+
 def main():
     all_contests = []
     all_contests.extend(fetch_codeforces())
     all_contests.extend(fetch_atcoder())
     all_contests.extend(fetch_uoj())
+    all_contests.extend(fetch_nowcoder())
 
     all_contests.sort(key=lambda x: x["start_time"])
 
@@ -204,6 +241,7 @@ def main():
     recent_finished_contests.extend(fetch_codeforces(include_all=True))
     recent_finished_contests.extend(fetch_atcoder(include_all=True))
     recent_finished_contests.extend(fetch_uoj(include_all=True, min_end_time=recent_finished_min_end_time))
+    recent_finished_contests.extend(fetch_nowcoder(include_all=True, min_end_time=recent_finished_min_end_time))
 
     recent_finished_contests = filter_recent_finished(deduplicate_contests(recent_finished_contests))
     recent_finished_contests.sort(key=lambda x: x["end_time"])

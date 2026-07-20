@@ -164,7 +164,8 @@ if ($finished_contests_json === false) {
 $platform_class = [
     'Codeforces' => 'cf',
     'AtCoder'    => 'atc',
-    'UOJ'        => 'uoj'
+    'UOJ'        => 'uoj',
+    'Nowcoder'   => 'nowcoder'
 ];
 
 function h($value) {
@@ -209,6 +210,7 @@ function contest_value($contest, $key, $default) {
   .platform.cf { background: #1f8acb; }
   .platform.atc { background: #5b8c5a; }
   .platform.uoj { background: #c0392b; }
+  .platform.nowcoder { background: #00a6a6; }
   .info { flex: 1; margin-left: 15px; }
   .title { font-size: 18px; font-weight: 600; color: #2c3e50; }
   .time { font-size: 14px; color: #7f8c8d; margin-top: 5px; }

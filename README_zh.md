@@ -9,6 +9,7 @@
 - Codeforces
 - AtCoder
 - UOJ
+- Nowcoder
 
 ## 输出文件
 
@@ -93,4 +94,5 @@ AI coding agents 和维护者在修改比赛提供商、输出契约、工作流
 
 - AtCoder 使用 AtCoder Problems API；在需要时会回退解析 AtCoder 官方比赛页面以获取即将开始的比赛。
 - UOJ 从公开比赛列表页面解析，并读取比赛链接中的 timeanddate 持续时间参数。
+- Nowcoder 从牛客竞赛 VIP 列表页内嵌的比赛元数据解析。
 - 网络问题或上游 API/页面结构变化，可能会暂时影响抓取到的比赛数量。

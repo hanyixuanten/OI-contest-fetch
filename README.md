@@ -9,6 +9,7 @@ Fetch programming contest schedules from several online judge platforms and expo
 - Codeforces
 - AtCoder
 - UOJ
+- Nowcoder
 
 ## Output Files
 
@@ -93,4 +94,5 @@ AI coding agents and maintainers should follow [AGENTS.md](AGENTS.md) when chang
 
 - AtCoder uses the AtCoder Problems API and falls back to the official AtCoder contest page for upcoming contests when needed.
 - UOJ is parsed from its public contests page, including the timeanddate duration parameters used by contest links.
+- Nowcoder is parsed from the embedded contest metadata on its VIP contest index page.
 - Network or upstream API changes can temporarily reduce the number of fetched contests.
