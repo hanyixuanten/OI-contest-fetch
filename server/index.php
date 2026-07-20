@@ -9,6 +9,83 @@ define('FINISHED_CACHE_FILE', __DIR__ . '/contests_all_cache.json');
 // 缓存有效期（秒），这里设 5 分钟
 define('CACHE_TTL', 300);
 
+// ========== 本地化逻辑 ==========
+$translations = [
+  'zh' => [
+    'html_lang' => 'zh-CN',
+    'page_title' => '信息竞赛日程',
+    'heading' => '信息竞赛日程',
+    'upcoming_title' => '即将到来的信息竞赛',
+    'finished_title' => '已结束的信息竞赛',
+    'load_error' => '暂时无法加载赛事数据，请稍后再试。',
+    'finished_load_error' => '暂时无法加载已结束赛事数据，请稍后再试。',
+    'empty_upcoming' => '暂无即将开始的赛事。',
+    'empty_finished' => '暂无最近结束的赛事。',
+    'ended' => '已结束',
+    'running' => '进行中',
+    'timezone_label' => '时区',
+    'day' => '天',
+    'hour' => '时',
+    'minute' => '分',
+    'second' => '秒'
+  ],
+  'en' => [
+    'html_lang' => 'en',
+    'page_title' => 'OI Contest Schedule',
+    'heading' => 'OI Contest Schedule',
+    'upcoming_title' => 'Upcoming Contests',
+    'finished_title' => 'Finished Contests',
+    'load_error' => 'Contest data is temporarily unavailable. Please try again later.',
+    'finished_load_error' => 'Finished contest data is temporarily unavailable. Please try again later.',
+    'empty_upcoming' => 'No upcoming contests.',
+    'empty_finished' => 'No recently finished contests.',
+    'ended' => 'Ended',
+    'running' => 'Running',
+    'timezone_label' => 'Time zone',
+    'day' => 'd',
+    'hour' => 'h',
+    'minute' => 'm',
+    'second' => 's'
+  ]
+];
+
+function normalize_language($lang) {
+  $lang = strtolower(trim($lang));
+  if (strpos($lang, 'zh') === 0) {
+    return 'zh';
+  }
+  if (strpos($lang, 'en') === 0) {
+    return 'en';
+  }
+  return 'zh';
+}
+
+function detect_language($translations) {
+  $lang = '';
+  if (isset($_GET['lang'])) {
+    $lang = $_GET['lang'];
+  } elseif (isset($_COOKIE['oi_lang'])) {
+    $lang = $_COOKIE['oi_lang'];
+  } elseif (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
+    $accepted_languages = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+    $lang = $accepted_languages[0];
+  }
+
+  return normalize_language($lang);
+}
+
+function detect_timezone() {
+  if (isset($_COOKIE['oi_timezone']) && in_array($_COOKIE['oi_timezone'], timezone_identifiers_list())) {
+    return $_COOKIE['oi_timezone'];
+  }
+  return date_default_timezone_get();
+}
+
+$current_lang = detect_language($translations);
+$t = $translations[$current_lang];
+$current_timezone = detect_timezone();
+$timezone = new DateTimeZone($current_timezone);
+
 // ========== 缓存逻辑 ==========
 function fetch_and_cache($url, $cache_file, $ttl) {
     // 如果缓存存在且未过期，直接返回缓存内容
@@ -58,7 +135,7 @@ function fetch_and_cache($url, $cache_file, $ttl) {
 $contests_json = fetch_and_cache(JSON_URL, CACHE_FILE, CACHE_TTL);
 if ($contests_json === false) {
     $contests = [];
-    $error_msg = '暂时无法加载赛事数据，请稍后再试。';
+    $error_msg = $t['load_error'];
 } else {
     $contests = json_decode($contests_json, true);
     $error_msg = '';
@@ -67,7 +144,7 @@ if ($contests_json === false) {
 $finished_contests_json = fetch_and_cache(FINISHED_JSON_URL, FINISHED_CACHE_FILE, CACHE_TTL);
 if ($finished_contests_json === false) {
   $finished_contests = [];
-  $finished_error_msg = '暂时无法加载已结束赛事数据，请稍后再试。';
+  $finished_error_msg = $t['finished_load_error'];
 } else {
   $finished_contests = json_decode($finished_contests_json, true);
   $finished_error_msg = '';
@@ -81,9 +158,15 @@ $platform_class = [
     'UOJ'        => 'uoj'
 ];
 
-// 辅助函数：Unix 时间戳转中文日期
-function format_time($ts) {
-    return date('Y-m-d H:i', $ts); // 可根据需要调整时区
+function h($value) {
+  return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+}
+
+// 辅助函数：Unix 时间戳按当前时区格式化
+function format_time($ts, $timezone) {
+  $date = new DateTime('@' . $ts);
+  $date->setTimezone($timezone);
+  return $date->format('Y-m-d H:i');
 }
 
 function platform_class_name($platform, $platform_class) {
@@ -91,15 +174,16 @@ function platform_class_name($platform, $platform_class) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="<?php echo h($t['html_lang']); ?>">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>信息竞赛日程</title>
+<title><?php echo h($t['page_title']); ?></title>
 <style>
   body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f7fa; margin: 0; padding: 20px; }
   .container { max-width: 900px; margin: 0 auto; }
   h1 { text-align: center; color: #2c3e50; }
+  .meta { text-align: center; color: #7f8c8d; font-size: 13px; margin-top: -8px; }
   .card {
     background: white; border-radius: 12px; padding: 20px; margin: 15px 0;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08); display: flex; justify-content: space-between;
@@ -125,65 +209,157 @@ function platform_class_name($platform, $platform_class) {
 </head>
 <body>
 <div class="container">
-  <h1>📅 信息竞赛日程</h1>
-  <h2 class="section-title">即将到来的信息竞赛</h2>
+  <h1>📅 <?php echo h($t['heading']); ?></h1>
+  <div class="meta"><?php echo h($t['timezone_label']); ?>: <span id="timezone-label"><?php echo h($current_timezone); ?></span></div>
+  <h2 class="section-title"><?php echo h($t['upcoming_title']); ?></h2>
   <?php if ($error_msg): ?>
-    <div class="error"><?php echo htmlspecialchars($error_msg); ?></div>
+    <div class="error"><?php echo h($error_msg); ?></div>
   <?php elseif (empty($contests)): ?>
-    <p style="text-align:center">暂无即将开始的赛事。</p>
+    <p style="text-align:center"><?php echo h($t['empty_upcoming']); ?></p>
   <?php else: ?>
     <?php foreach ($contests as $c): ?>
       <?php
         $cls = platform_class_name($c['platform'], $platform_class);
-        $start_time = format_time($c['start_time']);
-        $end_time = format_time($c['end_time']);
+        $start_time = format_time($c['start_time'], $timezone);
+        $end_time = format_time($c['end_time'], $timezone);
         $start_ts = $c['start_time'];
+        $end_ts = $c['end_time'];
       ?>
-      <a href="<?php echo htmlspecialchars($c['url']); ?>" target="_blank" class="card">
-        <span class="platform <?php echo $cls; ?>"><?php echo htmlspecialchars($c['platform']); ?></span>
+      <a href="<?php echo h($c['url']); ?>" target="_blank" class="card">
+        <span class="platform <?php echo h($cls); ?>"><?php echo h($c['platform']); ?></span>
         <div class="info">
-          <div class="title"><?php echo htmlspecialchars($c['title']); ?></div>
-          <div class="time"><?php echo $start_time; ?> ~ <?php echo $end_time; ?></div>
+          <div class="title"><?php echo h($c['title']); ?></div>
+          <div class="time" data-start="<?php echo $start_ts; ?>" data-end="<?php echo $end_ts; ?>"><?php echo h($start_time); ?> ~ <?php echo h($end_time); ?></div>
         </div>
         <div class="countdown" data-start="<?php echo $start_ts; ?>"></div>
       </a>
     <?php endforeach; ?>
   <?php endif; ?>
 
-  <h2 class="section-title">已结束的信息竞赛</h2>
+  <h2 class="section-title"><?php echo h($t['finished_title']); ?></h2>
   <?php if ($finished_error_msg): ?>
-    <div class="error"><?php echo htmlspecialchars($finished_error_msg); ?></div>
+    <div class="error"><?php echo h($finished_error_msg); ?></div>
   <?php elseif (empty($finished_contests)): ?>
-    <p style="text-align:center">暂无最近结束的赛事。</p>
+    <p style="text-align:center"><?php echo h($t['empty_finished']); ?></p>
   <?php else: ?>
     <?php foreach (array_reverse($finished_contests) as $c): ?>
       <?php
         $cls = platform_class_name($c['platform'], $platform_class);
-        $start_time = format_time($c['start_time']);
-        $end_time = format_time($c['end_time']);
+        $start_time = format_time($c['start_time'], $timezone);
+        $end_time = format_time($c['end_time'], $timezone);
+        $start_ts = $c['start_time'];
+        $end_ts = $c['end_time'];
       ?>
-      <a href="<?php echo htmlspecialchars($c['url']); ?>" target="_blank" class="card">
-        <span class="platform <?php echo $cls; ?>"><?php echo htmlspecialchars($c['platform']); ?></span>
+      <a href="<?php echo h($c['url']); ?>" target="_blank" class="card">
+        <span class="platform <?php echo h($cls); ?>"><?php echo h($c['platform']); ?></span>
         <div class="info">
-          <div class="title"><?php echo htmlspecialchars($c['title']); ?></div>
-          <div class="time"><?php echo $start_time; ?> ~ <?php echo $end_time; ?></div>
+          <div class="title"><?php echo h($c['title']); ?></div>
+          <div class="time" data-start="<?php echo $start_ts; ?>" data-end="<?php echo $end_ts; ?>"><?php echo h($start_time); ?> ~ <?php echo h($end_time); ?></div>
         </div>
-        <div class="status-ended">已结束</div>
+        <div class="status-ended"><?php echo h($t['ended']); ?></div>
       </a>
     <?php endforeach; ?>
   <?php endif; ?>
 </div>
 
 <script>
-// 客户端倒计时更新
+var translations = <?php echo json_encode($t, JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT); ?>;
+var serverLanguage = <?php echo json_encode($current_lang); ?>;
+var serverTimezone = <?php echo json_encode($current_timezone); ?>;
+
+function cookieValue(name) {
+  var parts = document.cookie ? document.cookie.split('; ') : [];
+  for (var i = 0; i < parts.length; i++) {
+    var pair = parts[i].split('=');
+    if (decodeURIComponent(pair[0]) === name) {
+      return decodeURIComponent(pair.slice(1).join('='));
+    }
+  }
+  return '';
+}
+
+function setCookie(name, value) {
+  document.cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value) + '; max-age=31536000; path=/; samesite=lax';
+}
+
+function normalizeLanguage(language) {
+  language = (language || '').toLowerCase();
+  if (language.indexOf('zh') === 0) return 'zh';
+  if (language.indexOf('en') === 0) return 'en';
+  return 'zh';
+}
+
+function syncSystemLocale() {
+  if (window.sessionStorage && sessionStorage.getItem('oi_locale_sync_attempted') === '1') {
+    return;
+  }
+
+  var systemLanguage = normalizeLanguage(navigator.language || (navigator.languages && navigator.languages[0]) || serverLanguage);
+  var systemTimezone = serverTimezone;
+  if (window.Intl && Intl.DateTimeFormat) {
+    systemTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone || serverTimezone;
+  }
+
+  var changed = false;
+  if (cookieValue('oi_lang') !== systemLanguage) {
+    setCookie('oi_lang', systemLanguage);
+    changed = true;
+  }
+  if (systemTimezone && cookieValue('oi_timezone') !== systemTimezone) {
+    setCookie('oi_timezone', systemTimezone);
+    changed = true;
+  }
+
+  if ((systemLanguage !== serverLanguage || systemTimezone !== serverTimezone) && changed) {
+    if (window.sessionStorage) {
+      sessionStorage.setItem('oi_locale_sync_attempted', '1');
+    }
+    window.location.reload();
+  }
+}
+
+function formatDateTime(ts) {
+  if (window.Intl && Intl.DateTimeFormat) {
+    return new Intl.DateTimeFormat(serverLanguage === 'en' ? 'en-US' : 'zh-CN', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+      timeZone: serverTimezone
+    }).format(new Date(ts * 1000));
+  }
+  return '';
+}
+
+function updateTimes() {
+  var timezoneLabel = document.getElementById('timezone-label');
+  if (timezoneLabel) timezoneLabel.textContent = serverTimezone;
+
+  var els = document.querySelectorAll('.time');
+  els.forEach(function(el) {
+    var start = parseInt(el.getAttribute('data-start'), 10);
+    var end = parseInt(el.getAttribute('data-end'), 10);
+    var startText = formatDateTime(start);
+    var endText = formatDateTime(end);
+    if (startText && endText) {
+      el.textContent = startText + ' ~ ' + endText;
+    }
+  });
+}
+
 function calcCountdown(startTs) {
   var diff = startTs * 1000 - Date.now();
-  if (diff <= 0) return "进行中";
+  if (diff <= 0) return translations.running;
   var d = Math.floor(diff / 86400000);
   var h = Math.floor((diff % 86400000) / 3600000);
   var m = Math.floor((diff % 3600000) / 60000);
   var s = Math.floor((diff % 60000) / 1000);
-  return d + "天 " + h + "时 " + m + "分 " + s + "秒";
+  if (serverLanguage === 'en') {
+    return d + translations.day + ' ' + h + translations.hour + ' ' + m + translations.minute + ' ' + s + translations.second;
+  }
+  return d + translations.day + ' ' + h + translations.hour + ' ' + m + translations.minute + ' ' + s + translations.second;
 }
 
 function updateCountdowns() {
@@ -193,6 +369,8 @@ function updateCountdowns() {
     el.textContent = calcCountdown(start);
   });
 }
+syncSystemLocale();
+updateTimes();
 setInterval(updateCountdowns, 1000);
 updateCountdowns();
 </script>
