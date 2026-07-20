@@ -1,5 +1,26 @@
 [
   {
+    "platform": "AtCoder",
+    "title": "AtCoder Beginner Contest 468",
+    "start_time": 1784980800,
+    "end_time": 1784986800,
+    "url": "https://atcoder.jp/contests/abc468"
+  },
+  {
+    "platform": "洛谷",
+    "title": "[ICPC2017 Xi' an R] ICPC 2017 区域赛西安站重现赛",
+    "start_time": 1785042000,
+    "end_time": 1785060000,
+    "url": "https://www.luogu.com.cn/contest/339238"
+  },
+  {
+    "platform": "洛谷",
+    "title": "【LGR-294-Div.4】洛谷入门赛 #50",
+    "start_time": 1785063600,
+    "end_time": 1785070800,
+    "url": "https://www.luogu.com.cn/contest/338569"
+  },
+  {
     "platform": "Codeforces",
     "title": "Codeforces Round (Div. 1)",
     "start_time": 1785076500,
@@ -14,10 +35,59 @@
     "url": "https://codeforces.com/contests/2250"
   },
   {
+    "platform": "洛谷",
+    "title": "【LGR-295-Div.2】洛谷 7 月月赛 III & FDOI Round 2 - 泠",
+    "start_time": 1785477600,
+    "end_time": 1785492000,
+    "url": "https://www.luogu.com.cn/contest/330173"
+  },
+  {
+    "platform": "AtCoder",
+    "title": "RECRUIT Nihonbashi Half Marathon 2026 Summer (AtCoder Heuristic Contest 069)",
+    "start_time": 1785492000,
+    "end_time": 1786356000,
+    "url": "https://atcoder.jp/contests/ahc069"
+  },
+  {
+    "platform": "洛谷",
+    "title": "【LGR-292-Div.3】洛谷基础赛 #37 & MSOI Round 1",
+    "start_time": 1785564000,
+    "end_time": 1785576600,
+    "url": "https://www.luogu.com.cn/contest/325521"
+  },
+  {
     "platform": "Codeforces",
     "title": "Codeforces Round (Div. 2)",
     "start_time": 1785584100,
     "end_time": 1785591300,
     "url": "https://codeforces.com/contests/2248"
+  },
+  {
+    "platform": "AtCoder",
+    "title": "AtCoder Beginner Contest 469",
+    "start_time": 1785585600,
+    "end_time": 1785591600,
+    "url": "https://atcoder.jp/contests/abc469"
+  },
+  {
+    "platform": "洛谷",
+    "title": "[ICPC2017 Hong Kong R] ICPC 2017 区域赛香港站重现赛",
+    "start_time": 1785733200,
+    "end_time": 1785751200,
+    "url": "https://www.luogu.com.cn/contest/340426"
+  },
+  {
+    "platform": "洛谷",
+    "title": "Math×Girl²",
+    "start_time": 1786190400,
+    "end_time": 1786276800,
+    "url": "https://www.luogu.com.cn/contest/315863"
+  },
+  {
+    "platform": "AtCoder",
+    "title": "UNIQUE VISION Programming Contest 2026 Summer (AtCoder Regular Contest 226)",
+    "start_time": 1786276800,
+    "end_time": 1786284000,
+    "url": "https://atcoder.jp/contests/arc226"
   }
 ]
