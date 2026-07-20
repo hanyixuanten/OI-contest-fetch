@@ -2,7 +2,7 @@
 
 [en](README.md)/zh
 
-从多个在线评测平台抓取编程竞赛日程，并导出为 JSON 文件。仓库中还包含一个简单的 PHP 页面，可以读取生成的 JSON 并展示即将到来的比赛。
+从多个在线评测平台抓取编程竞赛日程，并导出为 JSON。仓库中还包含一个简单的 PHP 页面，可以读取生成的 JSON 并展示即将到来的比赛。
 
 ## 支持平台
 
@@ -13,12 +13,11 @@
 
 ## 输出文件
 
-运行抓取脚本后，会在仓库根目录写入以下 JSON 文件：
+运行抓取脚本后，会在仓库根目录写入一个 JSON 文件：
 
-- `contests.json`：尚未结束的比赛，包括尚未开始和正在进行中的比赛。
-- `contests_all.json`：最近 30 天内已经结束的比赛。
+- `contests_all.json`：尚未结束的比赛，包括尚未开始和正在进行中的比赛，以及最近 30 天内已经结束的比赛。
 
-每个 JSON 文件的顶层结构如下。`generated_at` 是文件写入时的秒级 Unix 时间戳。
+JSON 文件的顶层结构如下。`generated_at` 是文件写入时的秒级 Unix 时间戳。
 
 ```json
 {
@@ -64,21 +63,21 @@ python fetch_contests.py
 成功运行后，脚本会输出类似下面的统计信息：
 
 ```text
-Total upcoming contests: 13
+Total active contests: 13
 Total contests finished in last 30 days: 139
 ```
 
 ## 网页展示
 
-`server/index.php` 会读取公开的 GitHub Raw 地址中的 `contests.json` 和 `contests_all.json`，在本地缓存 5 分钟，并渲染带客户端倒计时的即将开始比赛，以及最近已结束的比赛。页面还会读取 JSON 中的 `generated_at`，按检测到的时区显示最后更新时间。页面会识别浏览器/系统语言和时区，将其同步到 cookie，并在后续加载时用于本地化文案和比赛时间显示。不支持的语言会回退到英语。
+`server/index.php` 会读取公开 GitHub Raw 地址中的 `contests_all.json`，在本地缓存 5 分钟，并渲染带客户端倒计时的即将开始比赛，以及最近已结束的比赛。页面还会读取 JSON 中的 `generated_at`，按检测到的时区显示最后更新时间。页面会识别浏览器/系统语言和时区，将其同步到 cookie，并在后续加载时用于本地化文案和比赛时间显示。不支持的语言会回退到英语。
 
 如果你自行部署，并且仓库路径或分支发生变化，需要修改 `server/index.php` 中的这个常量：
 
 ```php
-define('JSON_URL', 'https://raw.githubusercontent.com/hanyixuanten/OI-contest-fetch/master/contests.json');
+define('JSON_URL', 'https://raw.githubusercontent.com/hanyixuanten/OI-contest-fetch/master/contests_all.json');
 ```
 
-缓存文件会以 `contests_cache.json` 和 `contests_all_cache.json` 的名字写在 `index.php` 同目录下，因此 Web 服务器进程需要拥有 `server/` 目录的写入权限。
+缓存文件会以 `contests_all_cache.json` 的名字写在 `index.php` 同目录下，因此 Web 服务器进程需要拥有 `server/` 目录的写入权限。
 
 ## 自动化
 
@@ -87,7 +86,7 @@ define('JSON_URL', 'https://raw.githubusercontent.com/hanyixuanten/OI-contest-fe
 1. 定时运行 `python fetch_contests.py`。
 2. 提交更新后的 JSON 文件。
 3. 推送到 GitHub。
-4. 让 `server/index.php` 从 GitHub Raw 读取最新的 `contests.json`。
+4. 让 `server/index.php` 从 GitHub Raw 读取最新的 `contests_all.json`。
 
 如果使用 GitHub Actions，请在运行脚本前安装 Python 依赖。
 

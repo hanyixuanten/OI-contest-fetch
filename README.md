@@ -2,7 +2,7 @@
 
 en/[zh](README_zh.md)
 
-Fetch programming contest schedules from several online judge platforms and export them as JSON files. The repository also includes a small PHP page that can read the generated JSON and display upcoming contests.
+Fetch programming contest schedules from several online judge platforms and export them as JSON. The repository also includes a small PHP page that can read the generated JSON and display upcoming contests.
 
 ## Supported Platforms
 
@@ -13,12 +13,11 @@ Fetch programming contest schedules from several online judge platforms and expo
 
 ## Output Files
 
-Running the fetch script writes JSON files to the repository root:
+Running the fetch script writes one JSON file to the repository root:
 
-- `contests.json`: contests that have not ended yet, including upcoming and currently running contests.
-- `contests_all.json`: contests that finished within the last 30 days.
+- `contests_all.json`: contests that have not ended yet, including upcoming and currently running contests, plus contests that finished within the last 30 days.
 
-Each JSON file has this top-level shape. `generated_at` is the Unix timestamp in seconds when the file was written.
+The JSON file has this top-level shape. `generated_at` is the Unix timestamp in seconds when the file was written.
 
 ```json
 {
@@ -64,30 +63,30 @@ python fetch_contests.py
 After a successful run, the script prints counts similar to:
 
 ```text
-Total upcoming contests: 13
+Total active contests: 13
 Total contests finished in last 30 days: 139
 ```
 
 ## Web Page
 
-`server/index.php` reads the public raw GitHub URLs for `contests.json` and `contests_all.json`, caches them locally for 5 minutes, and renders upcoming contests with a client-side countdown plus recently finished contests. It also shows the JSON `generated_at` value as the last update time in the detected time zone. The page detects the browser/system language and time zone, syncs them to cookies, and uses them for localized text and contest times on later page loads. Unsupported languages fall back to English.
+`server/index.php` reads the public raw GitHub URL for `contests_all.json`, caches it locally for 5 minutes, and renders upcoming contests with a client-side countdown plus recently finished contests. It also shows the JSON `generated_at` value as the last update time in the detected time zone. The page detects the browser/system language and time zone, syncs them to cookies, and uses them for localized text and contest times on later page loads. Unsupported languages fall back to English.
 
 If you deploy it yourself, update this constant in `server/index.php` if your repository path or branch changes:
 
 ```php
-define('JSON_URL', 'https://raw.githubusercontent.com/hanyixuanten/OI-contest-fetch/master/contests.json');
+define('JSON_URL', 'https://raw.githubusercontent.com/hanyixuanten/OI-contest-fetch/master/contests_all.json');
 ```
 
-The cache files are written next to `index.php` as `contests_cache.json` and `contests_all_cache.json`, so the web server process needs write permission for the `server/` directory.
+The cache file is written next to `index.php` as `contests_all_cache.json`, so the web server process needs write permission for the `server/` directory.
 
 ## Automation
 
 A typical automation flow is:
 
 1. Run `python fetch_contests.py` on a schedule.
-2. Commit the updated JSON files.
+2. Commit the updated JSON file.
 3. Push them to GitHub.
-4. Let `server/index.php` read the latest `contests.json` from GitHub raw content.
+4. Let `server/index.php` read the latest `contests_all.json` from GitHub raw content.
 
 For GitHub Actions, install the Python dependencies before running the script.
 

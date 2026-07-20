@@ -1,11 +1,9 @@
 <?php
 // ========== 配置 ==========
 // 你的 GitHub 仓库 Raw 文件地址（必须公开仓库）
-define('JSON_URL', 'https://raw.githubusercontent.com/hanyixuanten/OI-contest-fetch/master/contests.json');
-define('FINISHED_JSON_URL', 'https://raw.githubusercontent.com/hanyixuanten/OI-contest-fetch/master/contests_all.json');
+define('JSON_URL', 'https://raw.githubusercontent.com/hanyixuanten/OI-contest-fetch/master/contests_all.json');
 // 缓存文件路径（与 index.php 同目录，需可写）
-define('CACHE_FILE', __DIR__ . '/contests_cache.json');
-define('FINISHED_CACHE_FILE', __DIR__ . '/contests_all_cache.json');
+define('CACHE_FILE', __DIR__ . '/contests_all_cache.json');
 // 缓存有效期（秒），这里设 5 分钟
 define('CACHE_TTL', 300);
 
@@ -156,40 +154,40 @@ function parse_contest_payload($json) {
 $contests_json = fetch_and_cache(JSON_URL, CACHE_FILE, CACHE_TTL);
 if ($contests_json === false) {
     $contests = [];
-    $contests_generated_at = 0;
+  $finished_contests = [];
+  $last_generated_at = 0;
     $error_msg = $t['load_error'];
+  $finished_error_msg = $t['finished_load_error'];
 } else {
     $contests_payload = parse_contest_payload($contests_json);
     if ($contests_payload === false) {
         $contests = [];
-        $contests_generated_at = 0;
-        $error_msg = $t['load_error'];
-    } else {
-        $contests = $contests_payload['contests'];
-        $contests_generated_at = $contests_payload['generated_at'];
-        $error_msg = '';
-    }
-}
-
-$finished_contests_json = fetch_and_cache(FINISHED_JSON_URL, FINISHED_CACHE_FILE, CACHE_TTL);
-if ($finished_contests_json === false) {
-  $finished_contests = [];
-  $finished_contests_generated_at = 0;
-  $finished_error_msg = $t['finished_load_error'];
-} else {
-  $finished_contests_payload = parse_contest_payload($finished_contests_json);
-  if ($finished_contests_payload === false) {
     $finished_contests = [];
-    $finished_contests_generated_at = 0;
+    $last_generated_at = 0;
+        $error_msg = $t['load_error'];
     $finished_error_msg = $t['finished_load_error'];
-  } else {
-    $finished_contests = $finished_contests_payload['contests'];
-    $finished_contests_generated_at = $finished_contests_payload['generated_at'];
+    } else {
+    $all_contests = $contests_payload['contests'];
+    $contests = [];
+    $finished_contests = [];
+    foreach ($all_contests as $contest) {
+      if (contest_value($contest, 'status', '') === 'finished') {
+        $finished_contests[] = $contest;
+      } else {
+        $contests[] = $contest;
+      }
+    }
+    usort($contests, function($left, $right) {
+      return (int)contest_value($left, 'start_time', 0) - (int)contest_value($right, 'start_time', 0);
+    });
+    usort($finished_contests, function($left, $right) {
+      return (int)contest_value($left, 'end_time', 0) - (int)contest_value($right, 'end_time', 0);
+    });
+    $last_generated_at = $contests_payload['generated_at'];
+        $error_msg = '';
     $finished_error_msg = '';
   }
 }
-
-$last_generated_at = max($contests_generated_at, $finished_contests_generated_at);
 
 // ========== 平台样式映射 ==========
 $platform_class = [

@@ -95,13 +95,16 @@ def fetch_codeforces(include_all=False):
         if data["status"] != "OK":
             return []
         contests = []
+        now = now_ts()
         for c in data["result"]:
-            if include_all or c["phase"] == "BEFORE":
+            start = c["startTimeSeconds"]
+            end = start + c["durationSeconds"]
+            if include_all or end > now:
                 contests.append(make_contest(
                     "Codeforces",
                     c["name"],
-                    c["startTimeSeconds"],
-                    c["startTimeSeconds"] + c["durationSeconds"],
+                    start,
+                    end,
                     f"https://codeforces.com/contests/{c['id']}"
                 ))
         return contests
@@ -121,7 +124,7 @@ def fetch_atcoder(include_all=False):
         for c in data:
             start = c["start_epoch_second"]
             end = start + c["duration_second"]
-            if start > 0 and (include_all or start > now):
+            if start > 0 and (include_all or end > now):
                 contests.append(make_contest(
                     "AtCoder",
                     c["title"],
@@ -237,12 +240,6 @@ def main():
     all_contests.extend(fetch_uoj())
     all_contests.extend(fetch_nowcoder())
 
-    all_contests.sort(key=lambda x: x["start_time"])
-
-    # 直接写入仓库根目录
-    with open("contests.json", "w", encoding="utf-8") as f:
-        json.dump(contest_payload(all_contests, generated_at), f, ensure_ascii=False, indent=2)
-
     recent_finished_contests = []
     recent_finished_min_end_time = recent_finished_cutoff()
     recent_finished_contests.extend(fetch_codeforces(include_all=True))
@@ -251,12 +248,13 @@ def main():
     recent_finished_contests.extend(fetch_nowcoder(include_all=True, min_end_time=recent_finished_min_end_time))
 
     recent_finished_contests = filter_recent_finished(deduplicate_contests(recent_finished_contests))
-    recent_finished_contests.sort(key=lambda x: x["end_time"])
+    all_contests = deduplicate_contests(all_contests + recent_finished_contests)
+    all_contests.sort(key=lambda x: (x["start_time"], x["end_time"]))
 
     with open("contests_all.json", "w", encoding="utf-8") as f:
-        json.dump(contest_payload(recent_finished_contests, generated_at), f, ensure_ascii=False, indent=2)
+        json.dump(contest_payload(all_contests, generated_at), f, ensure_ascii=False, indent=2)
 
-    print(f"Total upcoming contests: {len(all_contests)}")
+    print(f"Total active contests: {sum(1 for contest in all_contests if contest['status'] != 'finished')}")
     print(f"Total contests finished in last 30 days: {len(recent_finished_contests)}")
 if __name__ == "__main__":
     main()
