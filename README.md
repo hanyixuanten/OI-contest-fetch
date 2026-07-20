@@ -40,7 +40,7 @@ Each contest item has this shape:
 ## Requirements
 
 - Python 3
-- PHP, only if you want to use the page under `server/`
+- PHP 5.4 or newer, only if you want to use the page under `server/`
 
 Python packages:
 

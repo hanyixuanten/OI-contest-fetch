@@ -13,7 +13,7 @@ Guidance for AI coding agents working in this repository.
 
 - Actions side: update contest data only. Change `.github/workflows/deploy.yml` when editing schedule triggers, Python version, dependency installation, generated files to commit, or commit/push behavior.
 - Data-fetch side: change `fetch_contests.py` when editing providers, normalization, filtering, output JSON shape, or output file policy.
-- Server side: change `server/index.php` when editing presentation, caching, raw JSON URL, platform labels/classes, countdown behavior, or PHP deployment behavior.
+- Server side: change `server/index.php` when editing presentation, caching, raw JSON URL, platform labels/classes, countdown behavior, or PHP deployment behavior. The current page requires PHP 5.4 or newer.
 - Do not put scraping logic in `server/index.php`; keep upstream fetching in `fetch_contests.py` so Actions can generate static JSON.
 
 ## Adding or Removing a Contest Provider
