@@ -2,8 +2,10 @@
 // ========== 配置 ==========
 // 你的 GitHub 仓库 Raw 文件地址（必须公开仓库）
 define('JSON_URL', 'https://raw.githubusercontent.com/hanyixuanten/OI-contest-fetch/master/contests.json');
+define('FINISHED_JSON_URL', 'https://raw.githubusercontent.com/hanyixuanten/OI-contest-fetch/master/contests_all.json');
 // 缓存文件路径（与 index.php 同目录，需可写）
 define('CACHE_FILE', __DIR__ . '/contests_cache.json');
+define('FINISHED_CACHE_FILE', __DIR__ . '/contests_all_cache.json');
 // 缓存有效期（秒），这里设 5 分钟
 define('CACHE_TTL', 300);
 
@@ -62,6 +64,15 @@ if ($contests_json === false) {
     $error_msg = '';
 }
 
+$finished_contests_json = fetch_and_cache(FINISHED_JSON_URL, FINISHED_CACHE_FILE, CACHE_TTL);
+if ($finished_contests_json === false) {
+  $finished_contests = [];
+  $finished_error_msg = '暂时无法加载已结束赛事数据，请稍后再试。';
+} else {
+  $finished_contests = json_decode($finished_contests_json, true);
+  $finished_error_msg = '';
+}
+
 // ========== 平台样式映射 ==========
 $platform_class = [
     'Codeforces' => 'cf',
@@ -74,13 +85,17 @@ $platform_class = [
 function format_time($ts) {
     return date('Y-m-d H:i', $ts); // 可根据需要调整时区
 }
+
+function platform_class_name($platform, $platform_class) {
+  return isset($platform_class[$platform]) ? $platform_class[$platform] : '';
+}
 ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>编程竞赛日程</title>
+<title>信息竞赛日程</title>
 <style>
   body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f7fa; margin: 0; padding: 20px; }
   .container { max-width: 900px; margin: 0 auto; }
@@ -102,13 +117,16 @@ function format_time($ts) {
   .title { font-size: 18px; font-weight: 600; color: #2c3e50; }
   .time { font-size: 14px; color: #7f8c8d; margin-top: 5px; }
   .countdown { font-weight: 700; color: #e74c3c; margin-left: auto; min-width: 120px; text-align: right; }
+  .status-ended { font-weight: 700; color: #95a5a6; margin-left: auto; min-width: 120px; text-align: right; }
+  .section-title { color: #2c3e50; margin: 35px 0 10px; border-bottom: 1px solid #dfe6e9; padding-bottom: 8px; }
   a { text-decoration: none; color: inherit; }
   .error { text-align: center; color: #e74c3c; padding: 20px; }
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>📅 即将到来的编程竞赛</h1>
+  <h1>📅 信息竞赛日程</h1>
+  <h2 class="section-title">即将到来的信息竞赛</h2>
   <?php if ($error_msg): ?>
     <div class="error"><?php echo htmlspecialchars($error_msg); ?></div>
   <?php elseif (empty($contests)): ?>
@@ -116,7 +134,7 @@ function format_time($ts) {
   <?php else: ?>
     <?php foreach ($contests as $c): ?>
       <?php
-        $cls = isset($platform_class[$c['platform']]) ? $platform_class[$c['platform']] : '';
+        $cls = platform_class_name($c['platform'], $platform_class);
         $start_time = format_time($c['start_time']);
         $end_time = format_time($c['end_time']);
         $start_ts = $c['start_time'];
@@ -128,6 +146,29 @@ function format_time($ts) {
           <div class="time"><?php echo $start_time; ?> ~ <?php echo $end_time; ?></div>
         </div>
         <div class="countdown" data-start="<?php echo $start_ts; ?>"></div>
+      </a>
+    <?php endforeach; ?>
+  <?php endif; ?>
+
+  <h2 class="section-title">已结束的信息竞赛</h2>
+  <?php if ($finished_error_msg): ?>
+    <div class="error"><?php echo htmlspecialchars($finished_error_msg); ?></div>
+  <?php elseif (empty($finished_contests)): ?>
+    <p style="text-align:center">暂无最近结束的赛事。</p>
+  <?php else: ?>
+    <?php foreach (array_reverse($finished_contests) as $c): ?>
+      <?php
+        $cls = platform_class_name($c['platform'], $platform_class);
+        $start_time = format_time($c['start_time']);
+        $end_time = format_time($c['end_time']);
+      ?>
+      <a href="<?php echo htmlspecialchars($c['url']); ?>" target="_blank" class="card">
+        <span class="platform <?php echo $cls; ?>"><?php echo htmlspecialchars($c['platform']); ?></span>
+        <div class="info">
+          <div class="title"><?php echo htmlspecialchars($c['title']); ?></div>
+          <div class="time"><?php echo $start_time; ?> ~ <?php echo $end_time; ?></div>
+        </div>
+        <div class="status-ended">已结束</div>
       </a>
     <?php endforeach; ?>
   <?php endif; ?>

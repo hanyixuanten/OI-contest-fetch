@@ -65,7 +65,7 @@ Total contests finished in last 30 days: 139
 
 ## 网页展示
 
-`server/index.php` 会读取公开的 GitHub Raw 地址中的 `contests.json`，在本地缓存 5 分钟，并渲染带客户端倒计时的比赛列表。
+`server/index.php` 会读取公开的 GitHub Raw 地址中的 `contests.json` 和 `contests_all.json`，在本地缓存 5 分钟，并渲染带客户端倒计时的即将开始比赛，以及最近已结束的比赛。
 
 如果你自行部署，并且仓库路径或分支发生变化，需要修改 `server/index.php` 中的这个常量：
 
@@ -73,7 +73,7 @@ Total contests finished in last 30 days: 139
 define('JSON_URL', 'https://raw.githubusercontent.com/hanyixuanten/OI-contest-fetch/master/contests.json');
 ```
 
-缓存文件会以 `contests_cache.json` 的名字写在 `index.php` 同目录下，因此 Web 服务器进程需要拥有 `server/` 目录的写入权限。
+缓存文件会以 `contests_cache.json` 和 `contests_all_cache.json` 的名字写在 `index.php` 同目录下，因此 Web 服务器进程需要拥有 `server/` 目录的写入权限。
 
 ## 自动化
 

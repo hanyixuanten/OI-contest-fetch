@@ -65,7 +65,7 @@ Total contests finished in last 30 days: 139
 
 ## Web Page
 
-`server/index.php` reads the public raw GitHub URL for `contests.json`, caches it locally for 5 minutes, and renders upcoming contests with a client-side countdown.
+`server/index.php` reads the public raw GitHub URLs for `contests.json` and `contests_all.json`, caches them locally for 5 minutes, and renders upcoming contests with a client-side countdown plus recently finished contests.
 
 If you deploy it yourself, update this constant in `server/index.php` if your repository path or branch changes:
 
@@ -73,7 +73,7 @@ If you deploy it yourself, update this constant in `server/index.php` if your re
 define('JSON_URL', 'https://raw.githubusercontent.com/hanyixuanten/OI-contest-fetch/master/contests.json');
 ```
 
-The cache file is written next to `index.php` as `contests_cache.json`, so the web server process needs write permission for the `server/` directory.
+The cache files are written next to `index.php` as `contests_cache.json` and `contests_all_cache.json`, so the web server process needs write permission for the `server/` directory.
 
 ## Automation
 
