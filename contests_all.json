@@ -8,14 +8,6 @@
     "url": "https://atcoder.jp/contests/abc463"
   },
   {
-    "platform": "洛谷",
-    "title": "[SCCPC 2026] 2026 年四川省大学生程序设计竞赛重现赛",
-    "start_time": 1782018000,
-    "end_time": 1782036000,
-    "status": "finished",
-    "url": "https://www.luogu.com.cn/contest/330334"
-  },
-  {
     "platform": "AtCoder",
     "title": "AtCoder Heuristic Contest 067",
     "start_time": 1782036000,
@@ -216,28 +208,12 @@
     "url": "https://atcoder.jp/contests/adt_easy_20260626_2"
   },
   {
-    "platform": "洛谷",
-    "title": "【LGR-289-Div.4】洛谷入门赛 #48",
-    "start_time": 1782471600,
-    "end_time": 1782478800,
-    "status": "finished",
-    "url": "https://www.luogu.com.cn/contest/332926"
-  },
-  {
     "platform": "AtCoder",
     "title": "AtCoder Weekday Contest 0100 Beta",
     "start_time": 1782471600,
     "end_time": 1782480600,
     "status": "finished",
     "url": "https://atcoder.jp/contests/awc0100"
-  },
-  {
-    "platform": "洛谷",
-    "title": "XRCOI Round 2",
-    "start_time": 1782540000,
-    "end_time": 1782554400,
-    "status": "finished",
-    "url": "https://www.luogu.com.cn/contest/244960"
   },
   {
     "platform": "AtCoder",
@@ -262,14 +238,6 @@
     "end_time": 1782579900,
     "status": "finished",
     "url": "https://codeforces.com/contests/2240"
-  },
-  {
-    "platform": "洛谷",
-    "title": "【MX-S15】梦熊 S 组 · 凡尔赛 & DLESS Round 5（同步赛）",
-    "start_time": 1782626400,
-    "end_time": 1782640800,
-    "status": "finished",
-    "url": "https://www.luogu.com.cn/contest/334639"
   },
   {
     "platform": "AtCoder",
@@ -496,28 +464,12 @@
     "url": "https://atcoder.jp/contests/awc0105"
   },
   {
-    "platform": "洛谷",
-    "title": "JRKSJ Round 10 庆典 热身赛",
-    "start_time": 1783144800,
-    "end_time": 1783159200,
-    "status": "finished",
-    "url": "https://www.luogu.com.cn/contest/299349"
-  },
-  {
     "platform": "AtCoder",
     "title": "AtCoder Beginner Contest 465",
     "start_time": 1783166400,
     "end_time": 1783172400,
     "status": "finished",
     "url": "https://atcoder.jp/contests/abc465"
-  },
-  {
-    "platform": "洛谷",
-    "title": "[ICPC2017 Shenyang R] ICPC 2017 区域赛沈阳站重现赛",
-    "start_time": 1783227600,
-    "end_time": 1783245600,
-    "status": "finished",
-    "url": "https://www.luogu.com.cn/contest/334255"
   },
   {
     "platform": "AtCoder",
@@ -744,14 +696,6 @@
     "url": "https://atcoder.jp/contests/adt_easy_20260710_2"
   },
   {
-    "platform": "洛谷",
-    "title": "【LGR-291-Div.2】洛谷 7 月月赛 II & FDOI Round 3 - Ciallo",
-    "start_time": 1783663200,
-    "end_time": 1783677600,
-    "status": "finished",
-    "url": "https://www.luogu.com.cn/contest/334075"
-  },
-  {
     "platform": "AtCoder",
     "title": "AtCoder Weekday Contest 0110 Beta",
     "start_time": 1783681200,
@@ -760,36 +704,12 @@
     "url": "https://atcoder.jp/contests/awc0110"
   },
   {
-    "platform": "洛谷",
-    "title": "【LGR-288-Div.2】洛谷 7 月月赛 I & lnOI Round 1",
-    "start_time": 1783749600,
-    "end_time": 1783764000,
-    "status": "finished",
-    "url": "https://www.luogu.com.cn/contest/297106"
-  },
-  {
     "platform": "AtCoder",
     "title": "AtCoder Beginner Contest 466",
     "start_time": 1783771200,
     "end_time": 1783777200,
     "status": "finished",
     "url": "https://atcoder.jp/contests/abc466"
-  },
-  {
-    "platform": "洛谷",
-    "title": "[ICPC2017 Qingdao R] ICPC 2017 区域赛青岛站重现赛",
-    "start_time": 1783832400,
-    "end_time": 1783850400,
-    "status": "finished",
-    "url": "https://www.luogu.com.cn/contest/334256"
-  },
-  {
-    "platform": "洛谷",
-    "title": "【LGR-290-Div.4】洛谷入门赛 #49",
-    "start_time": 1783854000,
-    "end_time": 1783861200,
-    "status": "finished",
-    "url": "https://www.luogu.com.cn/contest/332884"
   },
   {
     "platform": "AtCoder",
@@ -1016,14 +936,6 @@
     "url": "https://atcoder.jp/contests/adt_easy_20260717_2"
   },
   {
-    "platform": "洛谷",
-    "title": "「FAOI」Round 13",
-    "start_time": 1784268000,
-    "end_time": 1784282400,
-    "status": "finished",
-    "url": "https://www.luogu.com.cn/contest/332970"
-  },
-  {
     "platform": "AtCoder",
     "title": "AtCoder Weekday Contest 0115 Beta",
     "start_time": 1784286000,
@@ -1040,14 +952,6 @@
     "url": "https://atcoder.jp/contests/ahc068"
   },
   {
-    "platform": "洛谷",
-    "title": "Algo Beat Contest 009 &「MROI」Round 1",
-    "start_time": 1784354400,
-    "end_time": 1784368800,
-    "status": "finished",
-    "url": "https://www.luogu.com.cn/contest/326863"
-  },
-  {
     "platform": "AtCoder",
     "title": "AtCoder Beginner Contest 467",
     "start_time": 1784376000,
@@ -1062,14 +966,6 @@
     "end_time": 1784392500,
     "status": "finished",
     "url": "https://codeforces.com/contests/2247"
-  },
-  {
-    "platform": "洛谷",
-    "title": "[ICPC 2025 Shanghai R] ICPC 2025 区域赛上海站重现赛",
-    "start_time": 1784437200,
-    "end_time": 1784455200,
-    "status": "finished",
-    "url": "https://www.luogu.com.cn/contest/335418"
   },
   {
     "platform": "AtCoder",
