@@ -65,7 +65,7 @@ Total contests finished in last 30 days: 139
 
 ## Web Page
 
-`server/index.php` reads the public raw GitHub URLs for `contests.json` and `contests_all.json`, caches them locally for 5 minutes, and renders upcoming contests with a client-side countdown plus recently finished contests. The page detects the browser/system language and time zone, syncs them to cookies, and uses them for localized text and contest times on later page loads.
+`server/index.php` reads the public raw GitHub URLs for `contests.json` and `contests_all.json`, caches them locally for 5 minutes, and renders upcoming contests with a client-side countdown plus recently finished contests. The page detects the browser/system language and time zone, syncs them to cookies, and uses them for localized text and contest times on later page loads. Unsupported languages fall back to English.
 
 If you deploy it yourself, update this constant in `server/index.php` if your repository path or branch changes:
 

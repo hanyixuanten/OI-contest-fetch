@@ -57,7 +57,7 @@ function normalize_language($lang) {
   if (strpos($lang, 'en') === 0) {
     return 'en';
   }
-  return 'zh';
+  return 'en';
 }
 
 function detect_language($translations) {
@@ -286,7 +286,7 @@ function normalizeLanguage(language) {
   language = (language || '').toLowerCase();
   if (language.indexOf('zh') === 0) return 'zh';
   if (language.indexOf('en') === 0) return 'en';
-  return 'zh';
+  return 'en';
 }
 
 function syncSystemLocale() {

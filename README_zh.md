@@ -65,7 +65,7 @@ Total contests finished in last 30 days: 139
 
 ## 网页展示
 
-`server/index.php` 会读取公开的 GitHub Raw 地址中的 `contests.json` 和 `contests_all.json`，在本地缓存 5 分钟，并渲染带客户端倒计时的即将开始比赛，以及最近已结束的比赛。页面会识别浏览器/系统语言和时区，将其同步到 cookie，并在后续加载时用于本地化文案和比赛时间显示。
+`server/index.php` 会读取公开的 GitHub Raw 地址中的 `contests.json` 和 `contests_all.json`，在本地缓存 5 分钟，并渲染带客户端倒计时的即将开始比赛，以及最近已结束的比赛。页面会识别浏览器/系统语言和时区，将其同步到 cookie，并在后续加载时用于本地化文案和比赛时间显示。不支持的语言会回退到英语。
 
 如果你自行部署，并且仓库路径或分支发生变化，需要修改 `server/index.php` 中的这个常量：
 
