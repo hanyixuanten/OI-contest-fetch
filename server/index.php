@@ -228,7 +228,7 @@ function contest_value($contest, $key, $default) {
   body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f7fa; margin: 0; padding: 20px; }
   .container { max-width: 900px; margin: 0 auto; }
   h1 { text-align: center; color: #2c3e50; }
-  .meta { text-align: center; color: #7f8c8d; font-size: 13px; margin-top: -8px; }
+  .meta { text-align: center; color: #7f8c8d; font-size: 13px; margin-top: 4px; }
   .card {
     background: white; border-radius: 12px; padding: 20px; margin: 15px 0;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08); display: flex; justify-content: space-between;
