@@ -75,7 +75,7 @@ function detect_language($translations) {
 }
 
 function detect_timezone() {
-  if (isset($_COOKIE['oi_timezone']) && in_array($_COOKIE['oi_timezone'], timezone_identifiers_list())) {
+  if (isset($_COOKIE['oi_timezone']) && in_array($_COOKIE['oi_timezone'], timezone_identifiers_list(), true)) {
     return $_COOKIE['oi_timezone'];
   }
   return date_default_timezone_get();
@@ -138,7 +138,12 @@ if ($contests_json === false) {
     $error_msg = $t['load_error'];
 } else {
     $contests = json_decode($contests_json, true);
-    $error_msg = '';
+    if (!is_array($contests)) {
+        $contests = [];
+        $error_msg = $t['load_error'];
+    } else {
+        $error_msg = '';
+    }
 }
 
 $finished_contests_json = fetch_and_cache(FINISHED_JSON_URL, FINISHED_CACHE_FILE, CACHE_TTL);
@@ -147,7 +152,12 @@ if ($finished_contests_json === false) {
   $finished_error_msg = $t['finished_load_error'];
 } else {
   $finished_contests = json_decode($finished_contests_json, true);
-  $finished_error_msg = '';
+  if (!is_array($finished_contests)) {
+    $finished_contests = [];
+    $finished_error_msg = $t['finished_load_error'];
+  } else {
+    $finished_error_msg = '';
+  }
 }
 
 // ========== 平台样式映射 ==========
@@ -159,7 +169,7 @@ $platform_class = [
 ];
 
 function h($value) {
-  return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+  return htmlspecialchars((string)$value, ENT_QUOTES, 'UTF-8');
 }
 
 // 辅助函数：Unix 时间戳按当前时区格式化
@@ -171,6 +181,10 @@ function format_time($ts, $timezone) {
 
 function platform_class_name($platform, $platform_class) {
   return isset($platform_class[$platform]) ? $platform_class[$platform] : '';
+}
+
+function contest_value($contest, $key, $default) {
+  return is_array($contest) && isset($contest[$key]) ? $contest[$key] : $default;
 }
 ?>
 <!DOCTYPE html>
@@ -219,16 +233,19 @@ function platform_class_name($platform, $platform_class) {
   <?php else: ?>
     <?php foreach ($contests as $c): ?>
       <?php
-        $cls = platform_class_name($c['platform'], $platform_class);
-        $start_time = format_time($c['start_time'], $timezone);
-        $end_time = format_time($c['end_time'], $timezone);
-        $start_ts = $c['start_time'];
-        $end_ts = $c['end_time'];
+        $platform = contest_value($c, 'platform', '');
+        $title = contest_value($c, 'title', '');
+        $url = contest_value($c, 'url', '#');
+        $start_ts = (int)contest_value($c, 'start_time', 0);
+        $end_ts = (int)contest_value($c, 'end_time', 0);
+        $cls = platform_class_name($platform, $platform_class);
+        $start_time = format_time($start_ts, $timezone);
+        $end_time = format_time($end_ts, $timezone);
       ?>
-      <a href="<?php echo h($c['url']); ?>" target="_blank" class="card">
-        <span class="platform <?php echo h($cls); ?>"><?php echo h($c['platform']); ?></span>
+      <a href="<?php echo h($url); ?>" target="_blank" class="card">
+        <span class="platform <?php echo h($cls); ?>"><?php echo h($platform); ?></span>
         <div class="info">
-          <div class="title"><?php echo h($c['title']); ?></div>
+          <div class="title"><?php echo h($title); ?></div>
           <div class="time" data-start="<?php echo $start_ts; ?>" data-end="<?php echo $end_ts; ?>"><?php echo h($start_time); ?> ~ <?php echo h($end_time); ?></div>
         </div>
         <div class="countdown" data-start="<?php echo $start_ts; ?>"></div>
@@ -244,16 +261,19 @@ function platform_class_name($platform, $platform_class) {
   <?php else: ?>
     <?php foreach (array_reverse($finished_contests) as $c): ?>
       <?php
-        $cls = platform_class_name($c['platform'], $platform_class);
-        $start_time = format_time($c['start_time'], $timezone);
-        $end_time = format_time($c['end_time'], $timezone);
-        $start_ts = $c['start_time'];
-        $end_ts = $c['end_time'];
+        $platform = contest_value($c, 'platform', '');
+        $title = contest_value($c, 'title', '');
+        $url = contest_value($c, 'url', '#');
+        $start_ts = (int)contest_value($c, 'start_time', 0);
+        $end_ts = (int)contest_value($c, 'end_time', 0);
+        $cls = platform_class_name($platform, $platform_class);
+        $start_time = format_time($start_ts, $timezone);
+        $end_time = format_time($end_ts, $timezone);
       ?>
-      <a href="<?php echo h($c['url']); ?>" target="_blank" class="card">
-        <span class="platform <?php echo h($cls); ?>"><?php echo h($c['platform']); ?></span>
+      <a href="<?php echo h($url); ?>" target="_blank" class="card">
+        <span class="platform <?php echo h($cls); ?>"><?php echo h($platform); ?></span>
         <div class="info">
-          <div class="title"><?php echo h($c['title']); ?></div>
+          <div class="title"><?php echo h($title); ?></div>
           <div class="time" data-start="<?php echo $start_ts; ?>" data-end="<?php echo $end_ts; ?>"><?php echo h($start_time); ?> ~ <?php echo h($end_time); ?></div>
         </div>
         <div class="status-ended"><?php echo h($t['ended']); ?></div>
