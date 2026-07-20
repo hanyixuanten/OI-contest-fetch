@@ -1,16 +1,17 @@
-name: Update Contests & Deploy
+name: Update Contests & Commit
 
 on:
   schedule:
-    # 每 30 分钟执行一次（可按需修改）
-    - cron: '*/30 * * * *'
-  workflow_dispatch:   # 允许手动触发
+    - cron: '*/30 * * * *'   # 每30分钟执行一次
+  workflow_dispatch:          # 允许手动触发
 
 jobs:
-  build-and-deploy:
+  update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write        # 允许 Actions 推送代码
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Python
@@ -21,20 +22,15 @@ jobs:
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
-      - name: Create public directory
-        run: mkdir -p public
-
       - name: Fetch contests
         run: python fetch_contests.py
 
-      - name: Copy index.html to public
-        run: cp index.html public/   # 如果 index.html 本来就在 public 内，则不需要此步
-
-      - name: Deploy to FTP server
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./public/
-          server-dir: /public_html/contests/   # 改成你希望存放的目录
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "actions@github.com"
+          git add contests.json
+          git diff --staged --quiet || (
+            git commit -m "Update contests.json [skip ci]"
+            git push
+          )
