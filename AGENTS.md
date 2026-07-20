@@ -5,6 +5,7 @@ Guidance for AI coding agents working in this repository.
 ## Project Shape
 
 - `fetch_contests.py` is the data generator. It fetches contests, normalizes records with `platform`, `title`, `start_time`, `end_time`, `status`, and `url`, then writes JSON files in the repository root.
+- Current contest providers are Codeforces, AtCoder, and UOJ.
 - `.github/workflows/deploy.yml` is the GitHub Actions automation. It installs Python dependencies, runs `fetch_contests.py`, and commits generated JSON changes.
 - `server/index.php` is the serving/display layer. It reads the public raw `contests.json` and `contests_all.json`, caches them locally, and renders upcoming plus recently finished contests.
 - User-facing documentation lives in [README.md](README.md) and [README_zh.md](README_zh.md). Keep both languages in sync.

@@ -58,9 +58,6 @@ HEADERS = {
                   "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 }
 
-MONTH_MAP = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
-             "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12}
-
 def parse_atcoder_time(text):
     return int(datetime.strptime(text.strip(), "%Y-%m-%d %H:%M:%S%z").timestamp())
 
@@ -81,26 +78,6 @@ def parse_uoj_duration(time_url, duration_text):
     if match:
         return int(float(match.group(1)) * 3600)
     return 0
-
-def infer_usaco_year(season, month_num):
-    start_year, end_year = map(int, season.split("-"))
-    return start_year if month_num >= 8 else end_year
-
-def parse_usaco_day_range(date_text, season):
-    match = re.match(r"(\w{3})\s+(\d{1,2})(?:-(?:(\w{3})\s+)?(\d{1,2}))?", date_text)
-    if not match:
-        return None
-    start_mon, start_day, end_mon, end_day = match.groups()
-    start_month = MONTH_MAP.get(start_mon.lower())
-    end_month = MONTH_MAP.get((end_mon or start_mon).lower())
-    if not start_month or not end_month:
-        return None
-
-    start_dt = datetime(infer_usaco_year(season, start_month), start_month, int(start_day),
-                        0, 0, 0, tzinfo=timezone.utc)
-    end_dt = datetime(infer_usaco_year(season, end_month), end_month, int(end_day or start_day),
-                      23, 59, 59, tzinfo=timezone.utc)
-    return int(start_dt.timestamp()), int(end_dt.timestamp())
 
 # ---------- Codeforces ----------
 def fetch_codeforces(include_all=False):
@@ -175,51 +152,6 @@ def fetch_atcoder(include_all=False):
         print(f"AtCoder error: {e}")
         return []
 
-# ---------- USACO (解析官网) ----------
-def fetch_usaco(include_all=False):
-    url = "https://usaco.org/index.php?page=contests"
-    try:
-        resp = requests.get(url, headers=HEADERS, timeout=15)
-        resp.raise_for_status()
-        soup = BeautifulSoup(resp.text, "html.parser")
-        panel = None
-        season = None
-        for candidate in soup.find_all("div", class_="panel"):
-            heading = candidate.find("h2")
-            if not heading:
-                continue
-            match = re.search(r"(\d{4}-\d{4})\s+Schedule", heading.get_text(" ", strip=True))
-            if match:
-                panel = candidate
-                season = match.group(1)
-                break
-        if not panel:
-            return []
-        text = panel.get_text(separator="\n")
-        lines = [line.strip() for line in text.splitlines() if line.strip()]
-        contests = []
-        now = datetime.now(timezone.utc)
-        for line in lines:
-            match = re.match(r"((?:\w{3}\s+)?\d{1,2}(?:-(?:\w{3}\s+)?\d{1,2})?):\s*(.+)", line)
-            if match:
-                date_text, title = match.groups()
-                parsed_range = parse_usaco_day_range(date_text, season)
-                if not parsed_range:
-                    continue
-                start_ts, end_ts = parsed_range
-                if include_all or end_ts > now.timestamp():
-                    contests.append(make_contest(
-                        "USACO",
-                        title.strip(),
-                        start_ts,
-                        end_ts,
-                        "https://usaco.org/"
-                    ))
-        return contests
-    except Exception as e:
-        print(f"USACO error: {e}")
-        return []
-
 # ---------- UOJ ----------
 def fetch_uoj(include_all=False, min_end_time=None):
     url = "https://uoj.ac/contests"
@@ -255,14 +187,10 @@ def fetch_uoj(include_all=False, min_end_time=None):
         print(f"UOJ error: {e}")
         return []
 
-# ---------- 主逻辑 ----------
-# ... 前面四个平台的抓取函数保持不变 ...
-
 def main():
     all_contests = []
     all_contests.extend(fetch_codeforces())
     all_contests.extend(fetch_atcoder())
-    all_contests.extend(fetch_usaco())
     all_contests.extend(fetch_uoj())
 
     all_contests.sort(key=lambda x: x["start_time"])
@@ -275,7 +203,6 @@ def main():
     recent_finished_min_end_time = recent_finished_cutoff()
     recent_finished_contests.extend(fetch_codeforces(include_all=True))
     recent_finished_contests.extend(fetch_atcoder(include_all=True))
-    recent_finished_contests.extend(fetch_usaco(include_all=True))
     recent_finished_contests.extend(fetch_uoj(include_all=True, min_end_time=recent_finished_min_end_time))
 
     recent_finished_contests = filter_recent_finished(deduplicate_contests(recent_finished_contests))
