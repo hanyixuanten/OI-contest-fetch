@@ -1,14 +1,6 @@
 {
-  "generated_at": 1784638842,
+  "generated_at": 1784646768,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Heuristic Contest 067",
-      "start_time": 1782036000,
-      "end_time": 1782050400,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/ahc067"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/06/22 16:00start",
@@ -1256,6 +1248,14 @@
       "end_time": 1786801200,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/abc471"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Regular Contest 227",
+      "start_time": 1786881600,
+      "end_time": 1786888800,
+      "status": "upcoming",
+      "url": "https://atcoder.jp/contests/arc227"
     },
     {
       "platform": "AtCoder",
