@@ -1,5 +1,5 @@
 {
-  "generated_at": 1784633500,
+  "generated_at": 1784638842,
   "contests": [
     {
       "platform": "AtCoder",
@@ -8,14 +8,6 @@
       "end_time": 1782050400,
       "status": "finished",
       "url": "https://atcoder.jp/contests/ahc067"
-    },
-    {
-      "platform": "Nowcoder",
-      "title": "牛客周赛 Round 149",
-      "start_time": 1782039600,
-      "end_time": 1782046800,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/136720"
     },
     {
       "platform": "AtCoder",
@@ -1144,6 +1136,14 @@
       "end_time": 1784628000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/adt_easy_20260721_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Weekday Contest 0117 Beta",
+      "start_time": 1784631600,
+      "end_time": 1784635200,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/awc0117"
     },
     {
       "platform": "Nowcoder",
