@@ -1,22 +1,6 @@
 {
-  "generated_at": 1784877698,
+  "generated_at": 1784886069,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/06/24 16:00start",
-      "start_time": 1782284400,
-      "end_time": 1782288000,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260624_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/06/24 16:00start",
-      "start_time": 1782284400,
-      "end_time": 1782288000,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260624_1"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/06/24 18:00start",
@@ -1150,8 +1134,24 @@
       "title": "2026牛客暑期多校训练营3",
       "start_time": 1784865600,
       "end_time": 1784883600,
-      "status": "running",
+      "status": "finished",
       "url": "https://ac.nowcoder.com/acm/contest/133878"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/07/24 16:00start",
+      "start_time": 1784876400,
+      "end_time": 1784880000,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260724_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/07/24 16:00start",
+      "start_time": 1784876400,
+      "end_time": 1784880000,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260724_1"
     },
     {
       "platform": "AtCoder",
