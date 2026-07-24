@@ -1,5 +1,5 @@
 {
-  "generated_at": 1784855653,
+  "generated_at": 1784867951,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1150,7 +1150,7 @@
       "title": "2026牛客暑期多校训练营3",
       "start_time": 1784865600,
       "end_time": 1784883600,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://ac.nowcoder.com/acm/contest/133878"
     },
     {
