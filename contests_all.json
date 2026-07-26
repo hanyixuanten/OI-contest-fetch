@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785075110,
+  "generated_at": 1785080012,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1086,7 +1086,7 @@
       "title": "Codeforces Round 1112 (Div. 1)",
       "start_time": 1785076500,
       "end_time": 1785085500,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://codeforces.com/contests/2249"
     },
     {
@@ -1094,7 +1094,7 @@
       "title": "Codeforces Round 1112 (Div. 2)",
       "start_time": 1785076500,
       "end_time": 1785085500,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://codeforces.com/contests/2250"
     },
     {
