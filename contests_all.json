@@ -1,14 +1,6 @@
 {
-  "generated_at": 1785152132,
+  "generated_at": 1785160587,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "第七回日本最強プログラマー学生選手権～Advance～ -予選- （AtCoder Beginner Contest 464）",
-      "start_time": 1782561600,
-      "end_time": 1782567600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/abc464"
-    },
     {
       "platform": "Codeforces",
       "title": "Codeforces Round 1105 (Div. 1)",
@@ -1130,6 +1122,14 @@
       "url": "https://atcoder.jp/contests/adt_easy_20260727_2"
     },
     {
+      "platform": "AtCoder",
+      "title": "AtCoder Weekday Contest 0121 Beta",
+      "start_time": 1785150000,
+      "end_time": 1785153600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/awc0121"
+    },
+    {
       "platform": "Nowcoder",
       "title": "2026牛客暑期多校训练营4",
       "start_time": 1785297600,
@@ -1184,6 +1184,14 @@
       "end_time": 1786034100,
       "status": "upcoming",
       "url": "https://codeforces.com/contests/2252"
+    },
+    {
+      "platform": "Codeforces",
+      "title": "Educational Codeforces Round 193 (Rated for Div. 2)",
+      "start_time": 1786026900,
+      "end_time": 1786034100,
+      "status": "upcoming",
+      "url": "https://codeforces.com/contests/2253"
     },
     {
       "platform": "AtCoder",
