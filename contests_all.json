@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785139004,
+  "generated_at": 1785152132,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1098,6 +1098,38 @@
       "url": "https://codeforces.com/contests/2250"
     },
     {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/07/27 16:00start",
+      "start_time": 1785135600,
+      "end_time": 1785139200,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260727_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/07/27 16:00start",
+      "start_time": 1785135600,
+      "end_time": 1785139200,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260727_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/07/27 18:00start",
+      "start_time": 1785142800,
+      "end_time": 1785146400,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260727_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/07/27 18:00start",
+      "start_time": 1785142800,
+      "end_time": 1785146400,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260727_2"
+    },
+    {
       "platform": "Nowcoder",
       "title": "2026牛客暑期多校训练营4",
       "start_time": 1785297600,
@@ -1123,7 +1155,7 @@
     },
     {
       "platform": "Codeforces",
-      "title": "Codeforces Round (Div. 2)",
+      "title": "Codeforces Round 1113 (Div. 2)",
       "start_time": 1785584100,
       "end_time": 1785591300,
       "status": "upcoming",
