@@ -1,22 +1,6 @@
 {
-  "generated_at": 1785240358,
+  "generated_at": 1785249079,
   "contests": [
-    {
-      "platform": "Nowcoder",
-      "title": "牛客周赛 Round 150",
-      "start_time": 1782644400,
-      "end_time": 1782651600,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/137073"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Regular Contest 223",
-      "start_time": 1782648000,
-      "end_time": 1782655200,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/arc223"
-    },
     {
       "platform": "Codeforces",
       "title": "Codeforces Round 1106 (Div. 2)",
@@ -1144,6 +1128,14 @@
       "end_time": 1785232800,
       "status": "finished",
       "url": "https://atcoder.jp/contests/adt_easy_20260728_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Weekday Contest 0122 Beta",
+      "start_time": 1785236400,
+      "end_time": 1785240000,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/awc0122"
     },
     {
       "platform": "Nowcoder",
