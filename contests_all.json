@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785287575,
+  "generated_at": 1785299752,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1134,7 +1134,7 @@
       "title": "2026牛客暑期多校训练营4",
       "start_time": 1785297600,
       "end_time": 1785315600,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://ac.nowcoder.com/acm/contest/133879"
     },
     {
@@ -1232,6 +1232,14 @@
       "end_time": 1787406000,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/abc472"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "13th Asprova Programming Contest（AtCoder Heuristic Contest 070）",
+      "start_time": 1787983200,
+      "end_time": 1787997600,
+      "status": "upcoming",
+      "url": "https://atcoder.jp/contests/ahc070"
     },
     {
       "platform": "AtCoder",
