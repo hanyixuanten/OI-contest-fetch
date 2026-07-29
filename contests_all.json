@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785336920,
+  "generated_at": 1785343029,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1162,28 +1162,12 @@
       "url": "https://atcoder.jp/contests/abc469"
     },
     {
-      "platform": "Codeforces",
-      "title": "Codeforces Round 1113 (Div. 2)",
-      "start_time": 1785594900,
-      "end_time": 1785603900,
-      "status": "upcoming",
-      "url": "https://codeforces.com/contests/2248"
-    },
-    {
       "platform": "Nowcoder",
       "title": "牛客周赛 Round 155",
       "start_time": 1785668400,
       "end_time": 1785675600,
       "status": "upcoming",
       "url": "https://ac.nowcoder.com/acm/contest/138240"
-    },
-    {
-      "platform": "Codeforces",
-      "title": "Codeforces Round (Div. 3)",
-      "start_time": 1785854100,
-      "end_time": 1785862200,
-      "status": "upcoming",
-      "url": "https://codeforces.com/contests/2254"
     },
     {
       "platform": "Nowcoder",
@@ -1194,28 +1178,12 @@
       "url": "https://ac.nowcoder.com/acm/contest/133881"
     },
     {
-      "platform": "Codeforces",
-      "title": "Codeforces Round (Div. 2)",
-      "start_time": 1786026900,
-      "end_time": 1786034100,
-      "status": "upcoming",
-      "url": "https://codeforces.com/contests/2252"
-    },
-    {
       "platform": "Nowcoder",
       "title": "2026牛客暑期多校训练营7",
       "start_time": 1786075200,
       "end_time": 1786093200,
       "status": "upcoming",
       "url": "https://ac.nowcoder.com/acm/contest/133882"
-    },
-    {
-      "platform": "Codeforces",
-      "title": "Educational Codeforces Round 193 (Rated for Div. 2)",
-      "start_time": 1786113300,
-      "end_time": 1786120500,
-      "status": "upcoming",
-      "url": "https://codeforces.com/contests/2253"
     },
     {
       "platform": "UOJ",
