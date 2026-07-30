@@ -1,14 +1,6 @@
 {
-  "generated_at": 1785425183,
+  "generated_at": 1785431175,
   "contests": [
-    {
-      "platform": "Codeforces",
-      "title": "Codeforces Round 1107 (Div. 3)",
-      "start_time": 1782830100,
-      "end_time": 1782838200,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2241"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/01 16:00start",
