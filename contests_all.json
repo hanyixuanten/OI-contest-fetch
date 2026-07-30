@@ -1,14 +1,6 @@
 {
-  "generated_at": 1785410776,
+  "generated_at": 1785417075,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0102 Beta",
-      "start_time": 1782817200,
-      "end_time": 1782820800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0102"
-    },
     {
       "platform": "Codeforces",
       "title": "Codeforces Round 1107 (Div. 3)",
@@ -1136,6 +1128,14 @@
       "end_time": 1785405600,
       "status": "finished",
       "url": "https://atcoder.jp/contests/adt_easy_20260730_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Weekday Contest 0124 Beta",
+      "start_time": 1785409200,
+      "end_time": 1785412800,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/awc0124"
     },
     {
       "platform": "Nowcoder",
