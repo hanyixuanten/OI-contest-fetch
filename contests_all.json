@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785473251,
+  "generated_at": 1785483563,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1240,6 +1240,14 @@
       "end_time": 1786284000,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/arc226"
+    },
+    {
+      "platform": "Nowcoder",
+      "title": "2026牛客暑期多校训练营8",
+      "start_time": 1786507200,
+      "end_time": 1786525200,
+      "status": "upcoming",
+      "url": "https://ac.nowcoder.com/acm/contest/133883"
     },
     {
       "platform": "AtCoder",
