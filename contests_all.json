@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785592899,
+  "generated_at": 1785597094,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1098,11 +1098,19 @@
       "url": "https://atcoder.jp/contests/codequeen2026-final-Public"
     },
     {
+      "platform": "AtCoder",
+      "title": "AtCoder Beginner Contest 469",
+      "start_time": 1785585600,
+      "end_time": 1785591600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/abc469"
+    },
+    {
       "platform": "Codeforces",
       "title": "Codeforces Round 1113 (Div. 2)",
       "start_time": 1785594900,
       "end_time": 1785603900,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://codeforces.com/contests/2248"
     },
     {
