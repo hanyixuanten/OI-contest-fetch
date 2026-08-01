@@ -1,14 +1,6 @@
 {
-  "generated_at": 1785582178,
+  "generated_at": 1785586138,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0104 Beta",
-      "start_time": 1782990000,
-      "end_time": 1782993600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0104"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/03 16:00start",
@@ -1104,14 +1096,6 @@
       "end_time": 1785564000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/codequeen2026-final-Public"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Beginner Contest 469",
-      "start_time": 1785585600,
-      "end_time": 1785591600,
-      "status": "upcoming",
-      "url": "https://atcoder.jp/contests/abc469"
     },
     {
       "platform": "Codeforces",
