@@ -1,22 +1,6 @@
 {
-  "generated_at": 1785568686,
+  "generated_at": 1785576420,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/07/02 16:00start",
-      "start_time": 1782975600,
-      "end_time": 1782979200,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260702_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/07/02 16:00start",
-      "start_time": 1782975600,
-      "end_time": 1782979200,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260702_1"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/02 18:00start",
@@ -1216,6 +1200,14 @@
       "end_time": 1786196400,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/abc470"
+    },
+    {
+      "platform": "UOJ",
+      "title": "UOJ Challenge #1",
+      "start_time": 1786240800,
+      "end_time": 1788660000,
+      "status": "upcoming",
+      "url": "https://uoj.ac/contest/113"
     },
     {
       "platform": "Nowcoder",
