@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785601019,
+  "generated_at": 1785605192,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1110,7 +1110,7 @@
       "title": "Codeforces Round 1113 (Div. 2)",
       "start_time": 1785594900,
       "end_time": 1785603900,
-      "status": "running",
+      "status": "finished",
       "url": "https://codeforces.com/contests/2248"
     },
     {
