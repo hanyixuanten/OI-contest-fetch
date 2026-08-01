@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785541597,
+  "generated_at": 1785547160,
   "contests": [
     {
       "platform": "AtCoder",
@@ -88,6 +88,14 @@
       "end_time": 1783172400,
       "status": "finished",
       "url": "https://atcoder.jp/contests/abc465"
+    },
+    {
+      "platform": "UOJ",
+      "title": "UOJ Long Round #4",
+      "start_time": 1783216800,
+      "end_time": 1783432800,
+      "status": "finished",
+      "url": "https://uoj.ac/contest/108"
     },
     {
       "platform": "Nowcoder",
@@ -322,6 +330,14 @@
       "url": "https://atcoder.jp/contests/adt_easy_20260710_2"
     },
     {
+      "platform": "UOJ",
+      "title": "UOJ NOI Round #10 笔试",
+      "start_time": 1783681200,
+      "end_time": 1783683000,
+      "status": "finished",
+      "url": "https://uoj.ac/contest/109"
+    },
+    {
       "platform": "AtCoder",
       "title": "AtCoder Weekday Contest 0110 Beta",
       "start_time": 1783681200,
@@ -338,12 +354,28 @@
       "url": "https://ac.nowcoder.com/acm/contest/137418"
     },
     {
+      "platform": "UOJ",
+      "title": "UOJ NOI Round #10 Day1",
+      "start_time": 1783729800,
+      "end_time": 1783748400,
+      "status": "finished",
+      "url": "https://uoj.ac/contest/110"
+    },
+    {
       "platform": "AtCoder",
       "title": "AtCoder Beginner Contest 466",
       "start_time": 1783771200,
       "end_time": 1783777200,
       "status": "finished",
       "url": "https://atcoder.jp/contests/abc466"
+    },
+    {
+      "platform": "UOJ",
+      "title": "UOJ NOI Round #10 Day2",
+      "start_time": 1783816200,
+      "end_time": 1783834200,
+      "status": "finished",
+      "url": "https://uoj.ac/contest/111"
     },
     {
       "platform": "Nowcoder",
@@ -1160,6 +1192,14 @@
       "end_time": 1786120500,
       "status": "upcoming",
       "url": "https://codeforces.com/contests/2253"
+    },
+    {
+      "platform": "UOJ",
+      "title": "UOJ Prime Round 2026",
+      "start_time": 1786154400,
+      "end_time": 1788573600,
+      "status": "upcoming",
+      "url": "https://uoj.ac/contest/112"
     },
     {
       "platform": "AtCoder",
