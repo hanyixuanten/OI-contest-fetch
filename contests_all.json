@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785672705,
+  "generated_at": 1785679352,
   "contests": [
     {
       "platform": "AtCoder",
@@ -16,14 +16,6 @@
       "end_time": 1783432800,
       "status": "finished",
       "url": "https://uoj.ac/contest/108"
-    },
-    {
-      "platform": "Nowcoder",
-      "title": "牛客周赛 Round 151",
-      "start_time": 1783249200,
-      "end_time": 1783256400,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/137267"
     },
     {
       "platform": "AtCoder",
@@ -1078,7 +1070,7 @@
       "title": "牛客周赛 Round 155",
       "start_time": 1785668400,
       "end_time": 1785675600,
-      "status": "running",
+      "status": "finished",
       "url": "https://ac.nowcoder.com/acm/contest/138240"
     },
     {
