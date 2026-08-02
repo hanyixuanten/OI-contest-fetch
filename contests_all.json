@@ -1,22 +1,6 @@
 {
-  "generated_at": 1785663362,
+  "generated_at": 1785668705,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/07/03 18:00start",
-      "start_time": 1783069200,
-      "end_time": 1783072800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260703_2"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/07/03 18:00start",
-      "start_time": 1783069200,
-      "end_time": 1783072800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260703_2"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Weekday Contest 0105 Beta",
@@ -1102,7 +1086,7 @@
       "title": "牛客周赛 Round 155",
       "start_time": 1785668400,
       "end_time": 1785675600,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://ac.nowcoder.com/acm/contest/138240"
     },
     {
