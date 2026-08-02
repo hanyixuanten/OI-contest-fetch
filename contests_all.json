@@ -1,22 +1,6 @@
 {
-  "generated_at": 1785655431,
+  "generated_at": 1785663362,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/07/03 16:00start",
-      "start_time": 1783062000,
-      "end_time": 1783065600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260703_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/07/03 16:00start",
-      "start_time": 1783062000,
-      "end_time": 1783065600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260703_1"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/03 18:00start",
@@ -1200,6 +1184,22 @@
       "end_time": 1786284000,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/arc226"
+    },
+    {
+      "platform": "Codeforces",
+      "title": "Codeforces Round (Div. 1)",
+      "start_time": 1786286100,
+      "end_time": 1786293300,
+      "status": "upcoming",
+      "url": "https://codeforces.com/contests/2255"
+    },
+    {
+      "platform": "Codeforces",
+      "title": "Codeforces Round (Div. 2)",
+      "start_time": 1786286100,
+      "end_time": 1786293300,
+      "status": "upcoming",
+      "url": "https://codeforces.com/contests/2256"
     },
     {
       "platform": "Nowcoder",
