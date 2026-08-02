@@ -1,14 +1,6 @@
 {
-  "generated_at": 1785668705,
+  "generated_at": 1785672705,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0105 Beta",
-      "start_time": 1783076400,
-      "end_time": 1783080000,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0105"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Beginner Contest 465",
