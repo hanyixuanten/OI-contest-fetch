@@ -1,14 +1,6 @@
 {
-  "generated_at": 1785757807,
+  "generated_at": 1785765968,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Beginner Contest 465",
-      "start_time": 1783166400,
-      "end_time": 1783172400,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/abc465"
-    },
     {
       "platform": "UOJ",
       "title": "UOJ Long Round #4",
@@ -1104,6 +1096,14 @@
       "end_time": 1785751200,
       "status": "finished",
       "url": "https://atcoder.jp/contests/adt_easy_20260803_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Weekday Contest 0126 Beta",
+      "start_time": 1785754800,
+      "end_time": 1785758400,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/awc0126"
     },
     {
       "platform": "Codeforces",
