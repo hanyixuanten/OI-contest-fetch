@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785775093,
+  "generated_at": 1785781750,
   "contests": [
     {
       "platform": "UOJ",
@@ -1208,6 +1208,14 @@
       "end_time": 1786525200,
       "status": "upcoming",
       "url": "https://ac.nowcoder.com/acm/contest/133883"
+    },
+    {
+      "platform": "Codeforces",
+      "title": "ICPC 2026 Online Challenge 1 powered by Huawei",
+      "start_time": 1786705200,
+      "end_time": 1787914800,
+      "status": "upcoming",
+      "url": "https://codeforces.com/contests/2251"
     },
     {
       "platform": "AtCoder",
