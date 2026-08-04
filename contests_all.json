@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785867577,
+  "generated_at": 1785873798,
   "contests": [
     {
       "platform": "UOJ",
@@ -1163,7 +1163,7 @@
     },
     {
       "platform": "Codeforces",
-      "title": "Codeforces Round (Div. 2)",
+      "title": "Codeforces Round 1115 (Div. 2)",
       "start_time": 1786026900,
       "end_time": 1786034100,
       "status": "upcoming",
