@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785861789,
+  "generated_at": 1785867577,
   "contests": [
     {
       "platform": "UOJ",
@@ -1150,7 +1150,7 @@
       "title": "Codeforces Round 1114 (Div. 3)",
       "start_time": 1785854100,
       "end_time": 1785862200,
-      "status": "running",
+      "status": "finished",
       "url": "https://codeforces.com/contests/2254"
     },
     {
