@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785827988,
+  "generated_at": 1785837855,
   "contests": [
     {
       "platform": "UOJ",
@@ -1106,6 +1106,22 @@
       "url": "https://atcoder.jp/contests/awc0126"
     },
     {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/08/04 16:00start",
+      "start_time": 1785826800,
+      "end_time": 1785830400,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260804_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/08/04 16:00start",
+      "start_time": 1785826800,
+      "end_time": 1785830400,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260804_1"
+    },
+    {
       "platform": "Codeforces",
       "title": "Codeforces Round 1114 (Div. 3)",
       "start_time": 1785854100,
@@ -1187,7 +1203,7 @@
     },
     {
       "platform": "Codeforces",
-      "title": "Codeforces Round (Div. 1)",
+      "title": "Codeforces Round 1116 (Div. 1)",
       "start_time": 1786286100,
       "end_time": 1786295100,
       "status": "upcoming",
@@ -1195,7 +1211,7 @@
     },
     {
       "platform": "Codeforces",
-      "title": "Codeforces Round (Div. 2)",
+      "title": "Codeforces Round 1116 (Div. 2)",
       "start_time": 1786286100,
       "end_time": 1786295100,
       "status": "upcoming",
