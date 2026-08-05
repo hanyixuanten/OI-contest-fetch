@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785946995,
+  "generated_at": 1785953272,
   "contests": [
     {
       "platform": "UOJ",
@@ -8,14 +8,6 @@
       "end_time": 1783432800,
       "status": "finished",
       "url": "https://uoj.ac/contest/108"
-    },
-    {
-      "platform": "Codeforces",
-      "title": "Educational Codeforces Round 192 (Rated for Div. 2)",
-      "start_time": 1783348500,
-      "end_time": 1783355700,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2242"
     },
     {
       "platform": "AtCoder",
