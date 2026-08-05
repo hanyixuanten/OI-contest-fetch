@@ -1,5 +1,5 @@
 {
-  "generated_at": 1785924123,
+  "generated_at": 1785931657,
   "contests": [
     {
       "platform": "UOJ",
@@ -8,14 +8,6 @@
       "end_time": 1783432800,
       "status": "finished",
       "url": "https://uoj.ac/contest/108"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0106 Beta",
-      "start_time": 1783335600,
-      "end_time": 1783339200,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0106"
     },
     {
       "platform": "Codeforces",
@@ -1136,6 +1128,22 @@
       "end_time": 1785916800,
       "status": "finished",
       "url": "https://atcoder.jp/contests/adt_easy_20260805_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/08/05 18:00start",
+      "start_time": 1785920400,
+      "end_time": 1785924000,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260805_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/08/05 18:00start",
+      "start_time": 1785920400,
+      "end_time": 1785924000,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260805_2"
     },
     {
       "platform": "Codeforces",
