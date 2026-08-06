@@ -1,14 +1,6 @@
 {
-  "generated_at": 1786018431,
+  "generated_at": 1786027168,
   "contests": [
-    {
-      "platform": "UOJ",
-      "title": "UOJ Long Round #4",
-      "start_time": 1783216800,
-      "end_time": 1783432800,
-      "status": "finished",
-      "url": "https://uoj.ac/contest/108"
-    },
     {
       "platform": "AtCoder",
       "title": "World Tour Finals 2026 Heuristic",
@@ -1150,7 +1142,7 @@
       "title": "Codeforces Round 1115 (Div. 2)",
       "start_time": 1786026900,
       "end_time": 1786034100,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://codeforces.com/contests/2252"
     },
     {
