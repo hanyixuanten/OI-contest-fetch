@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786113262,
+  "generated_at": 1786116643,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1142,7 +1142,7 @@
       "title": "Educational Codeforces Round 193 (Rated for Div. 2)",
       "start_time": 1786113300,
       "end_time": 1786120500,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://codeforces.com/contests/2253"
     },
     {
