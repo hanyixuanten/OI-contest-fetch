@@ -1,14 +1,6 @@
 {
-  "generated_at": 1786101067,
+  "generated_at": 1786104067,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0108 Beta",
-      "start_time": 1783508400,
-      "end_time": 1783512000,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0108"
-    },
     {
       "platform": "AtCoder",
       "title": "World Tour Finals 2026 Algorithm",
