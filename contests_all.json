@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786089343,
+  "generated_at": 1786093970,
   "contests": [
     {
       "platform": "AtCoder",
@@ -8,22 +8,6 @@
       "end_time": 1783504800,
       "status": "finished",
       "url": "https://atcoder.jp/contests/awtf2026heuristic"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/07/08 16:00start",
-      "start_time": 1783494000,
-      "end_time": 1783497600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260708_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/07/08 16:00start",
-      "start_time": 1783494000,
-      "end_time": 1783497600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260708_1"
     },
     {
       "platform": "AtCoder",
@@ -176,14 +160,6 @@
       "end_time": 1783834200,
       "status": "finished",
       "url": "https://uoj.ac/contest/111"
-    },
-    {
-      "platform": "Nowcoder",
-      "title": "牛客周赛 Round 152",
-      "start_time": 1783854000,
-      "end_time": 1783861200,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/137448"
     },
     {
       "platform": "AtCoder",
@@ -1150,8 +1126,24 @@
       "title": "2026牛客暑期多校训练营7",
       "start_time": 1786075200,
       "end_time": 1786093200,
-      "status": "running",
+      "status": "finished",
       "url": "https://ac.nowcoder.com/acm/contest/133882"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/08/07 16:00start",
+      "start_time": 1786086000,
+      "end_time": 1786089600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260807_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/08/07 16:00start",
+      "start_time": 1786086000,
+      "end_time": 1786089600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260807_1"
     },
     {
       "platform": "Codeforces",
