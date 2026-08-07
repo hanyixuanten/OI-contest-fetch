@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786027168,
+  "generated_at": 1786061952,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1142,7 +1142,7 @@
       "title": "Codeforces Round 1115 (Div. 2)",
       "start_time": 1786026900,
       "end_time": 1786034100,
-      "status": "running",
+      "status": "finished",
       "url": "https://codeforces.com/contests/2252"
     },
     {
