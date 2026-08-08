@@ -1,22 +1,6 @@
 {
-  "generated_at": 1786179282,
+  "generated_at": 1786182564,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "World Tour Finals 2026 Algorithm",
-      "start_time": 1783562400,
-      "end_time": 1783587600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awtf2026algo"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "World Tour Finals 2026 Algorithm（Open Contest）",
-      "start_time": 1783562400,
-      "end_time": 1783587600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awtf2026algo-open"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/09 18:00start",
