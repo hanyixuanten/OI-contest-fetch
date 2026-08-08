@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786197256,
+  "generated_at": 1786200161,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1096,6 +1096,14 @@
       "end_time": 1788573600,
       "status": "running",
       "url": "https://uoj.ac/contest/112"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "JPRSプログラミングコンテスト2026#2 （AtCoder Beginner Contest 470）",
+      "start_time": 1786190400,
+      "end_time": 1786196400,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/abc470"
     },
     {
       "platform": "UOJ",
