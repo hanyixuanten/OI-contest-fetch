@@ -1,14 +1,6 @@
 {
-  "generated_at": 1786190367,
+  "generated_at": 1786194413,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0109 Beta",
-      "start_time": 1783594800,
-      "end_time": 1783598400,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0109"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/10 16:00start",
@@ -1104,14 +1096,6 @@
       "end_time": 1788573600,
       "status": "running",
       "url": "https://uoj.ac/contest/112"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "JPRS Programming Contest 2026#2 (AtCoder Beginner Contest 470)",
-      "start_time": 1786190400,
-      "end_time": 1786196400,
-      "status": "upcoming",
-      "url": "https://atcoder.jp/contests/abc470"
     },
     {
       "platform": "UOJ",
