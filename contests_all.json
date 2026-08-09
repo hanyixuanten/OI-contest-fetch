@@ -1,14 +1,6 @@
 {
-  "generated_at": 1786275502,
+  "generated_at": 1786277863,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0110 Beta",
-      "start_time": 1783681200,
-      "end_time": 1783684800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0110"
-    },
     {
       "platform": "UOJ",
       "title": "UOJ NOI Round #10 Day1",
@@ -1080,14 +1072,6 @@
       "end_time": 1786280400,
       "status": "running",
       "url": "https://ac.nowcoder.com/acm/contest/138917"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "UNIQUE VISION Programming Contest 2026 Summer (AtCoder Regular Contest 226)",
-      "start_time": 1786276800,
-      "end_time": 1786284000,
-      "status": "upcoming",
-      "url": "https://atcoder.jp/contests/arc226"
     },
     {
       "platform": "Codeforces",
