@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786235819,
+  "generated_at": 1786243749,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1108,8 +1108,8 @@
     {
       "platform": "UOJ",
       "title": "UOJ Challenge #1",
-      "start_time": 1786240800,
-      "end_time": 1788660000,
+      "start_time": 1786248000,
+      "end_time": 1788667200,
       "status": "upcoming",
       "url": "https://uoj.ac/contest/113"
     },
