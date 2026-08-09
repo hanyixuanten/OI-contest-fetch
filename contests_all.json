@@ -1,14 +1,6 @@
 {
-  "generated_at": 1786273023,
+  "generated_at": 1786275502,
   "contests": [
-    {
-      "platform": "UOJ",
-      "title": "UOJ NOI Round #10 笔试",
-      "start_time": 1783681200,
-      "end_time": 1783683000,
-      "status": "finished",
-      "url": "https://uoj.ac/contest/109"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Weekday Contest 0110 Beta",
@@ -1086,7 +1078,7 @@
       "title": "牛客周赛 Round 156",
       "start_time": 1786273200,
       "end_time": 1786280400,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://ac.nowcoder.com/acm/contest/138917"
     },
     {
