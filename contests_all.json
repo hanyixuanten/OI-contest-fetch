@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786284629,
+  "generated_at": 1786287362,
   "contests": [
     {
       "platform": "UOJ",
@@ -1066,11 +1066,19 @@
       "url": "https://ac.nowcoder.com/acm/contest/138917"
     },
     {
+      "platform": "AtCoder",
+      "title": "ユニークビジョンプログラミングコンテスト2026 夏（AtCoder Regular Contest 226）",
+      "start_time": 1786276800,
+      "end_time": 1786284000,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/arc226"
+    },
+    {
       "platform": "Codeforces",
       "title": "Codeforces Round 1116 (Div. 1)",
       "start_time": 1786286100,
       "end_time": 1786295100,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://codeforces.com/contests/2255"
     },
     {
@@ -1078,7 +1086,7 @@
       "title": "Codeforces Round 1116 (Div. 2)",
       "start_time": 1786286100,
       "end_time": 1786295100,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://codeforces.com/contests/2256"
     },
     {
