@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786354983,
+  "generated_at": 1786359059,
   "contests": [
     {
       "platform": "AtCoder",
@@ -747,6 +747,14 @@
     },
     {
       "platform": "AtCoder",
+      "title": "RECRUIT 日本橋ハーフマラソン 2026夏（AtCoder Heuristic Contest 069）",
+      "start_time": 1785492000,
+      "end_time": 1786356000,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/ahc069"
+    },
+    {
+      "platform": "AtCoder",
       "title": "AtCoder Weekday Contest 0125 Beta",
       "start_time": 1785495600,
       "end_time": 1785499200,
@@ -1096,6 +1104,22 @@
       "end_time": 1786348800,
       "status": "finished",
       "url": "https://atcoder.jp/contests/adt_easy_20260810_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/08/10 18:00start",
+      "start_time": 1786352400,
+      "end_time": 1786356000,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260810_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/08/10 18:00start",
+      "start_time": 1786352400,
+      "end_time": 1786356000,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260810_2"
     },
     {
       "platform": "Nowcoder",
