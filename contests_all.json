@@ -1,14 +1,6 @@
 {
-  "generated_at": 1786337260,
+  "generated_at": 1786341802,
   "contests": [
-    {
-      "platform": "UOJ",
-      "title": "UOJ NOI Round #10 Day1",
-      "start_time": 1783729800,
-      "end_time": 1783748400,
-      "status": "finished",
-      "url": "https://uoj.ac/contest/110"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Beginner Contest 466",
