@@ -1,14 +1,6 @@
 {
-  "generated_at": 1786451213,
+  "generated_at": 1786456901,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Regular Contest-- 224",
-      "start_time": 1783857600,
-      "end_time": 1783864800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/arc224"
-    },
     {
       "platform": "Codeforces",
       "title": "Codeforces Round 1108 (Div. 2)",
