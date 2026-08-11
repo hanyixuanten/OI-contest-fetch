@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786448006,
+  "generated_at": 1786451213,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1144,6 +1144,14 @@
       "end_time": 1786442400,
       "status": "finished",
       "url": "https://atcoder.jp/contests/adt_easy_20260811_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Weekday Contest 0132 Beta",
+      "start_time": 1786446000,
+      "end_time": 1786449600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/awc0132"
     },
     {
       "platform": "Nowcoder",
