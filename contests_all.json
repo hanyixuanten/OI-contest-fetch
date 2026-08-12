@@ -1,14 +1,6 @@
 {
-  "generated_at": 1786533144,
+  "generated_at": 1786536145,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0111 Beta",
-      "start_time": 1783940400,
-      "end_time": 1783944000,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0111"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/14 16:00start",
