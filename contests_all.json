@@ -1,22 +1,6 @@
 {
-  "generated_at": 1786524857,
+  "generated_at": 1786529803,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/07/13 18:00start",
-      "start_time": 1783933200,
-      "end_time": 1783936800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260713_2"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/07/13 18:00start",
-      "start_time": 1783933200,
-      "end_time": 1783936800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260713_2"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Weekday Contest 0111 Beta",
@@ -224,14 +208,6 @@
       "end_time": 1784392500,
       "status": "finished",
       "url": "https://codeforces.com/contests/2247"
-    },
-    {
-      "platform": "Nowcoder",
-      "title": "牛客周赛 Round 153",
-      "start_time": 1784458800,
-      "end_time": 1784466000,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/137561"
     },
     {
       "platform": "AtCoder",
@@ -1126,7 +1102,7 @@
       "title": "2026牛客暑期多校训练营8",
       "start_time": 1786507200,
       "end_time": 1786525200,
-      "status": "running",
+      "status": "finished",
       "url": "https://ac.nowcoder.com/acm/contest/133883"
     },
     {
@@ -1144,6 +1120,22 @@
       "end_time": 1786521600,
       "status": "finished",
       "url": "https://atcoder.jp/contests/adt_easy_20260812_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/08/12 18:00start",
+      "start_time": 1786525200,
+      "end_time": 1786528800,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260812_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/08/12 18:00start",
+      "start_time": 1786525200,
+      "end_time": 1786528800,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260812_2"
     },
     {
       "platform": "Nowcoder",
