@@ -1,14 +1,6 @@
 {
-  "generated_at": 1786619610,
+  "generated_at": 1786622592,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0112 Beta",
-      "start_time": 1784026800,
-      "end_time": 1784030400,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0112"
-    },
     {
       "platform": "Codeforces",
       "title": "Codeforces Round 1109 (Div. 3)",
