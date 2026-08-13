@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786588770,
+  "generated_at": 1786595541,
   "contests": [
     {
       "platform": "AtCoder",
@@ -290,14 +290,6 @@
       "url": "https://atcoder.jp/contests/awc0117"
     },
     {
-      "platform": "Nowcoder",
-      "title": "2026牛客暑期多校训练营2",
-      "start_time": 1784692800,
-      "end_time": 1784710800,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/133877"
-    },
-    {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/22 16:00start",
       "start_time": 1784703600,
@@ -378,14 +370,6 @@
       "url": "https://atcoder.jp/contests/awc0119"
     },
     {
-      "platform": "Nowcoder",
-      "title": "2026牛客暑期多校训练营3",
-      "start_time": 1784865600,
-      "end_time": 1784883600,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/133878"
-    },
-    {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/24 16:00start",
       "start_time": 1784876400,
@@ -432,14 +416,6 @@
       "end_time": 1784986800,
       "status": "finished",
       "url": "https://atcoder.jp/contests/abc468"
-    },
-    {
-      "platform": "Nowcoder",
-      "title": "牛客周赛 Round 154",
-      "start_time": 1785063600,
-      "end_time": 1785070800,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/137840"
     },
     {
       "platform": "Codeforces",
@@ -538,14 +514,6 @@
       "url": "https://atcoder.jp/contests/awc0122"
     },
     {
-      "platform": "Nowcoder",
-      "title": "2026牛客暑期多校训练营4",
-      "start_time": 1785297600,
-      "end_time": 1785315600,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/133879"
-    },
-    {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/29 16:00start",
       "start_time": 1785308400,
@@ -626,14 +594,6 @@
       "url": "https://atcoder.jp/contests/awc0124"
     },
     {
-      "platform": "Nowcoder",
-      "title": "2026牛客暑期多校训练营5",
-      "start_time": 1785470400,
-      "end_time": 1785489300,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/133880"
-    },
-    {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/31 16:00start",
       "start_time": 1785481200,
@@ -704,14 +664,6 @@
       "end_time": 1785603900,
       "status": "finished",
       "url": "https://codeforces.com/contests/2248"
-    },
-    {
-      "platform": "Nowcoder",
-      "title": "牛客周赛 Round 155",
-      "start_time": 1785668400,
-      "end_time": 1785675600,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/138240"
     },
     {
       "platform": "AtCoder",
@@ -802,14 +754,6 @@
       "url": "https://codeforces.com/contests/2254"
     },
     {
-      "platform": "Nowcoder",
-      "title": "2026牛客暑期多校训练营6",
-      "start_time": 1785902400,
-      "end_time": 1785920400,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/133881"
-    },
-    {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/08/05 16:00start",
       "start_time": 1785913200,
@@ -898,14 +842,6 @@
       "url": "https://codeforces.com/contests/2252"
     },
     {
-      "platform": "Nowcoder",
-      "title": "2026牛客暑期多校训练营7",
-      "start_time": 1786075200,
-      "end_time": 1786093200,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/133882"
-    },
-    {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/08/07 16:00start",
       "start_time": 1786086000,
@@ -976,14 +912,6 @@
       "end_time": 1788667200,
       "status": "running",
       "url": "https://uoj.ac/contest/113"
-    },
-    {
-      "platform": "Nowcoder",
-      "title": "牛客周赛 Round 156",
-      "start_time": 1786273200,
-      "end_time": 1786280400,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/138917"
     },
     {
       "platform": "AtCoder",
@@ -1088,14 +1016,6 @@
       "end_time": 1786449600,
       "status": "finished",
       "url": "https://atcoder.jp/contests/awc0132"
-    },
-    {
-      "platform": "Nowcoder",
-      "title": "2026牛客暑期多校训练营8",
-      "start_time": 1786507200,
-      "end_time": 1786525200,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/133883"
     },
     {
       "platform": "AtCoder",
