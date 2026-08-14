@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786737541,
+  "generated_at": 1786739933,
   "contests": [
     {
       "platform": "AtCoder",
@@ -858,28 +858,12 @@
       "url": "https://codeforces.com/contests/2253"
     },
     {
-      "platform": "UOJ",
-      "title": "UOJ Prime Round 2026",
-      "start_time": 1786154400,
-      "end_time": 1788573600,
-      "status": "running",
-      "url": "https://uoj.ac/contest/112"
-    },
-    {
       "platform": "AtCoder",
       "title": "JPRSプログラミングコンテスト2026#2 （AtCoder Beginner Contest 470）",
       "start_time": 1786190400,
       "end_time": 1786196400,
       "status": "finished",
       "url": "https://atcoder.jp/contests/abc470"
-    },
-    {
-      "platform": "UOJ",
-      "title": "UOJ Challenge #1",
-      "start_time": 1786248000,
-      "end_time": 1788667200,
-      "status": "running",
-      "url": "https://uoj.ac/contest/113"
     },
     {
       "platform": "Nowcoder",
