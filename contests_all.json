@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786704216,
+  "generated_at": 1786707183,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1134,7 +1134,7 @@
       "title": "ICPC 2026 Online Challenge 1 powered by Huawei",
       "start_time": 1786705200,
       "end_time": 1787914800,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://codeforces.com/contests/2251"
     },
     {
