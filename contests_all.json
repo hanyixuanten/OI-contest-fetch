@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786780984,
+  "generated_at": 1786783231,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1114,6 +1114,14 @@
       "url": "https://atcoder.jp/contests/awc0135"
     },
     {
+      "platform": "Codeforces",
+      "title": "ICPC 2026 Online Challenge 1 powered by Huawei",
+      "start_time": 1786705200,
+      "end_time": 1787914800,
+      "status": "running",
+      "url": "https://codeforces.com/contests/2251"
+    },
+    {
       "platform": "AtCoder",
       "title": "AtCoder Beginner Contest 471",
       "start_time": 1786795200,
@@ -1136,6 +1144,14 @@
       "end_time": 1786888800,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/arc227"
+    },
+    {
+      "platform": "Codeforces",
+      "title": "Codeforces Round (Div. 2)",
+      "start_time": 1786977300,
+      "end_time": 1786984500,
+      "status": "upcoming",
+      "url": "https://codeforces.com/contests/2257"
     },
     {
       "platform": "Nowcoder",
