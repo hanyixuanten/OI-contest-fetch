@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786802523,
+  "generated_at": 1786804362,
   "contests": [
     {
       "platform": "Codeforces",
@@ -1096,6 +1096,14 @@
       "end_time": 1787914800,
       "status": "running",
       "url": "https://codeforces.com/contests/2251"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Beginner Contest 471",
+      "start_time": 1786795200,
+      "end_time": 1786801200,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/abc471"
     },
     {
       "platform": "Nowcoder",
