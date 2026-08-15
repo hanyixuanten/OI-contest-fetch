@@ -1,14 +1,6 @@
 {
-  "generated_at": 1786794660,
+  "generated_at": 1786795806,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0114 Beta",
-      "start_time": 1784199600,
-      "end_time": 1784203200,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0114"
-    },
     {
       "platform": "Codeforces",
       "title": "Spectral::Cup 2026 Round 3 (Codeforces Round 1110, Div. 1 + Div. 2)",
@@ -1104,14 +1096,6 @@
       "end_time": 1787914800,
       "status": "running",
       "url": "https://codeforces.com/contests/2251"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Beginner Contest 471",
-      "start_time": 1786795200,
-      "end_time": 1786801200,
-      "status": "upcoming",
-      "url": "https://atcoder.jp/contests/abc471"
     },
     {
       "platform": "Nowcoder",
