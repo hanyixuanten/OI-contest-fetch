@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786821120,
+  "generated_at": 1786822756,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1115,7 +1115,7 @@
     },
     {
       "platform": "Codeforces",
-      "title": "Codeforces Round (Div. 2)",
+      "title": "Codeforces Round 1117 (Div. 2)",
       "start_time": 1786977300,
       "end_time": 1786984500,
       "status": "upcoming",
