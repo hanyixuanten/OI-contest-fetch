@@ -1,14 +1,6 @@
 {
-  "generated_at": 1786813417,
+  "generated_at": 1786815061,
   "contests": [
-    {
-      "platform": "Codeforces",
-      "title": "Spectral::Cup 2026 Round 3 (Codeforces Round 1110, Div. 1 + Div. 2)",
-      "start_time": 1784213100,
-      "end_time": 1784222100,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2245"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/17 16:00start",
