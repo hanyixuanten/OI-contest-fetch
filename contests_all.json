@@ -1,14 +1,6 @@
 {
-  "generated_at": 1786881079,
+  "generated_at": 1786882356,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0115 Beta",
-      "start_time": 1784286000,
-      "end_time": 1784289600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0115"
-    },
     {
       "platform": "AtCoder",
       "title": "estie プログラミングコンテスト2026 （AtCoder Heuristic Contest 068）",
@@ -1072,14 +1064,6 @@
       "end_time": 1786885200,
       "status": "running",
       "url": "https://ac.nowcoder.com/acm/contest/139206"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Regular Contest 227",
-      "start_time": 1786881600,
-      "end_time": 1786888800,
-      "status": "upcoming",
-      "url": "https://atcoder.jp/contests/arc227"
     },
     {
       "platform": "Codeforces",
