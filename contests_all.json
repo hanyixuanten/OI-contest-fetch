@@ -1,14 +1,6 @@
 {
-  "generated_at": 1786971698,
+  "generated_at": 1786974508,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Beginner Contest 467",
-      "start_time": 1784376000,
-      "end_time": 1784382000,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/abc467"
-    },
     {
       "platform": "Codeforces",
       "title": "Codeforces Round 1111 (Div. 2)",
