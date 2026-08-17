@@ -1,5 +1,5 @@
 {
-  "generated_at": 1786952133,
+  "generated_at": 1786954908,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1066,6 +1066,22 @@
       "url": "https://atcoder.jp/contests/arc227"
     },
     {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/08/17 16:00start",
+      "start_time": 1786950000,
+      "end_time": 1786953600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260817_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/08/17 16:00start",
+      "start_time": 1786950000,
+      "end_time": 1786953600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260817_1"
+    },
+    {
       "platform": "Codeforces",
       "title": "Codeforces Round 1117 (Div. 2)",
       "start_time": 1786977300,
@@ -1107,6 +1123,14 @@
     },
     {
       "platform": "Nowcoder",
+      "title": "牛客周赛 Round 158",
+      "start_time": 1787482800,
+      "end_time": 1787490000,
+      "status": "upcoming",
+      "url": "https://ac.nowcoder.com/acm/contest/139659"
+    },
+    {
+      "platform": "Nowcoder",
       "title": "牛客练习赛156",
       "start_time": 1787914800,
       "end_time": 1787923800,
@@ -1128,6 +1152,14 @@
       "end_time": 1788010800,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/abc473"
+    },
+    {
+      "platform": "Nowcoder",
+      "title": "牛客周赛 Round 159",
+      "start_time": 1788087600,
+      "end_time": 1788094800,
+      "status": "upcoming",
+      "url": "https://ac.nowcoder.com/acm/contest/139660"
     },
     {
       "platform": "AtCoder",
