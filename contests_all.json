@@ -1,14 +1,6 @@
 {
-  "generated_at": 1786960426,
+  "generated_at": 1786963365,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "estie プログラミングコンテスト2026 （AtCoder Heuristic Contest 068）",
-      "start_time": 1784354400,
-      "end_time": 1784368800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/ahc068"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Beginner Contest 467",
@@ -1080,6 +1072,22 @@
       "end_time": 1786953600,
       "status": "finished",
       "url": "https://atcoder.jp/contests/adt_easy_20260817_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/08/17 18:00start",
+      "start_time": 1786957200,
+      "end_time": 1786960800,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260817_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/08/17 18:00start",
+      "start_time": 1786957200,
+      "end_time": 1786960800,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260817_2"
     },
     {
       "platform": "Codeforces",
