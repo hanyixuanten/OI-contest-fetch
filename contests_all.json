@@ -1,5 +1,5 @@
 {
-  "generated_at": 1787046763,
+  "generated_at": 1787049587,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1104,6 +1104,22 @@
       "end_time": 1787040000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/adt_easy_20260818_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/08/18 18:00start",
+      "start_time": 1787043600,
+      "end_time": 1787047200,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260818_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/08/18 18:00start",
+      "start_time": 1787043600,
+      "end_time": 1787047200,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260818_2"
     },
     {
       "platform": "Nowcoder",
