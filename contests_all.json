@@ -1,14 +1,6 @@
 {
-  "generated_at": 1787058761,
+  "generated_at": 1787061611,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Regular Contest 225",
-      "start_time": 1784462400,
-      "end_time": 1784469600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/arc225"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/20 16:00start",
