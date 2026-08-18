@@ -1,5 +1,5 @@
 {
-  "generated_at": 1787039840,
+  "generated_at": 1787042929,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1088,6 +1088,22 @@
       "end_time": 1786984500,
       "status": "finished",
       "url": "https://codeforces.com/contests/2257"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/08/18 16:00start",
+      "start_time": 1787036400,
+      "end_time": 1787040000,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260818_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/08/18 16:00start",
+      "start_time": 1787036400,
+      "end_time": 1787040000,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260818_1"
     },
     {
       "platform": "Nowcoder",
