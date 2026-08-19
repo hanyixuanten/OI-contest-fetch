@@ -1,5 +1,5 @@
 {
-  "generated_at": 1787135919,
+  "generated_at": 1787137807,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1126,7 +1126,7 @@
       "title": "牛客2026年七夕节比赛",
       "start_time": 1787137200,
       "end_time": 1787144400,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://ac.nowcoder.com/acm/contest/139172"
     },
     {
