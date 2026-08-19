@@ -1,5 +1,5 @@
 {
-  "generated_at": 1787141671,
+  "generated_at": 1787145273,
   "contests": [
     {
       "platform": "AtCoder",
@@ -264,14 +264,6 @@
       "end_time": 1785240000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/awc0122"
-    },
-    {
-      "platform": "Nowcoder",
-      "title": "2026牛客暑期多校训练营4",
-      "start_time": 1785297600,
-      "end_time": 1785315600,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/133879"
     },
     {
       "platform": "AtCoder",
@@ -1126,7 +1118,7 @@
       "title": "牛客2026年七夕节比赛",
       "start_time": 1787137200,
       "end_time": 1787144400,
-      "status": "running",
+      "status": "finished",
       "url": "https://ac.nowcoder.com/acm/contest/139172"
     },
     {
