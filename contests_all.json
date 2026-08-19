@@ -1,22 +1,6 @@
 {
-  "generated_at": 1787133209,
+  "generated_at": 1787135919,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/07/20 18:00start",
-      "start_time": 1784538000,
-      "end_time": 1784541600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260720_2"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/07/20 18:00start",
-      "start_time": 1784538000,
-      "end_time": 1784541600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260720_2"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Weekday Contest 0116 Beta",
@@ -1120,6 +1104,22 @@
       "end_time": 1787126400,
       "status": "finished",
       "url": "https://atcoder.jp/contests/adt_easy_20260819_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/08/19 18:00start",
+      "start_time": 1787130000,
+      "end_time": 1787133600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260819_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/08/19 18:00start",
+      "start_time": 1787130000,
+      "end_time": 1787133600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260819_2"
     },
     {
       "platform": "Nowcoder",
