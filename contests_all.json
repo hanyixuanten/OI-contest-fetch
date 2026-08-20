@@ -1,5 +1,5 @@
 {
-  "generated_at": 1787241211,
+  "generated_at": 1787244387,
   "contests": [
     {
       "platform": "AtCoder",
@@ -128,22 +128,6 @@
       "end_time": 1784986800,
       "status": "finished",
       "url": "https://atcoder.jp/contests/abc468"
-    },
-    {
-      "platform": "Codeforces",
-      "title": "Codeforces Round 1112 (Div. 1)",
-      "start_time": 1785076500,
-      "end_time": 1785085500,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2249"
-    },
-    {
-      "platform": "Codeforces",
-      "title": "Codeforces Round 1112 (Div. 2)",
-      "start_time": 1785076500,
-      "end_time": 1785085500,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2250"
     },
     {
       "platform": "AtCoder",
@@ -378,14 +362,6 @@
       "url": "https://atcoder.jp/contests/abc469"
     },
     {
-      "platform": "Codeforces",
-      "title": "Codeforces Round 1113 (Div. 2)",
-      "start_time": 1785594900,
-      "end_time": 1785603900,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2248"
-    },
-    {
       "platform": "Nowcoder",
       "title": "牛客周赛 Round 155",
       "start_time": 1785668400,
@@ -472,14 +448,6 @@
       "end_time": 1785844800,
       "status": "finished",
       "url": "https://atcoder.jp/contests/awc0127"
-    },
-    {
-      "platform": "Codeforces",
-      "title": "Codeforces Round 1114 (Div. 3)",
-      "start_time": 1785854100,
-      "end_time": 1785862200,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2254"
     },
     {
       "platform": "Nowcoder",
@@ -570,14 +538,6 @@
       "url": "https://atcoder.jp/contests/awc0129"
     },
     {
-      "platform": "Codeforces",
-      "title": "Codeforces Round 1115 (Div. 2)",
-      "start_time": 1786026900,
-      "end_time": 1786034100,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2252"
-    },
-    {
       "platform": "Nowcoder",
       "title": "2026牛客暑期多校训练营7",
       "start_time": 1786075200,
@@ -626,14 +586,6 @@
       "url": "https://atcoder.jp/contests/awc0130"
     },
     {
-      "platform": "Codeforces",
-      "title": "Educational Codeforces Round 193 (Rated for Div. 2)",
-      "start_time": 1786113300,
-      "end_time": 1786120500,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2253"
-    },
-    {
       "platform": "UOJ",
       "title": "UOJ Prime Round 2026",
       "start_time": 1786154400,
@@ -672,22 +624,6 @@
       "end_time": 1786284000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/arc226"
-    },
-    {
-      "platform": "Codeforces",
-      "title": "Codeforces Round 1116 (Div. 1)",
-      "start_time": 1786286100,
-      "end_time": 1786295100,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2255"
-    },
-    {
-      "platform": "Codeforces",
-      "title": "Codeforces Round 1116 (Div. 2)",
-      "start_time": 1786286100,
-      "end_time": 1786295100,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2256"
     },
     {
       "platform": "AtCoder",
@@ -906,14 +842,6 @@
       "url": "https://atcoder.jp/contests/awc0135"
     },
     {
-      "platform": "Codeforces",
-      "title": "ICPC 2026 Online Challenge 1 powered by Huawei",
-      "start_time": 1786705200,
-      "end_time": 1787914800,
-      "status": "running",
-      "url": "https://codeforces.com/contests/2251"
-    },
-    {
       "platform": "AtCoder",
       "title": "AtCoder Beginner Contest 471",
       "start_time": 1786795200,
@@ -976,14 +904,6 @@
       "end_time": 1786968000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/awc0136"
-    },
-    {
-      "platform": "Codeforces",
-      "title": "Codeforces Round 1117 (Div. 2)",
-      "start_time": 1786977300,
-      "end_time": 1786984500,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2257"
     },
     {
       "platform": "AtCoder",
@@ -1168,14 +1088,6 @@
       "end_time": 1788010800,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/abc473"
-    },
-    {
-      "platform": "Codeforces",
-      "title": "Codeforces Round (Div. 2)",
-      "start_time": 1788014100,
-      "end_time": 1788021300,
-      "status": "upcoming",
-      "url": "https://codeforces.com/contests/2258"
     },
     {
       "platform": "Nowcoder",
