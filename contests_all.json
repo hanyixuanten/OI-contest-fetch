@@ -1,5 +1,5 @@
 {
-  "generated_at": 1787278200,
+  "generated_at": 1787282731,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1200,6 +1200,14 @@
       "end_time": 1789220400,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/abc475"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Heuristic Contest 071",
+      "start_time": 1789293600,
+      "end_time": 1789308000,
+      "status": "upcoming",
+      "url": "https://atcoder.jp/contests/ahc071"
     }
   ]
 }
