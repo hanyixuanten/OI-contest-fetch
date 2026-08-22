@@ -1,5 +1,5 @@
 {
-  "generated_at": 1787407311,
+  "generated_at": 1787409094,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1080,6 +1080,14 @@
       "end_time": 1787317200,
       "status": "finished",
       "url": "https://ac.nowcoder.com/acm/contest/139208"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Talent Quest 〜 今から28卒には脱出してもらいます〜予選（AtCoder Beginner Contest 472）",
+      "start_time": 1787400000,
+      "end_time": 1787406000,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/abc472"
     },
     {
       "platform": "Nowcoder",
