@@ -1,5 +1,5 @@
 {
-  "generated_at": 1787475161,
+  "generated_at": 1787477817,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1072,6 +1072,14 @@
       "end_time": 1787406000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/abc472"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "第七回日本最強プログラマー学生選手権 -決勝-",
+      "start_time": 1787461800,
+      "end_time": 1787472600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/jsc2026-final"
     },
     {
       "platform": "Nowcoder",
