@@ -1,5 +1,5 @@
 {
-  "generated_at": 1787482534,
+  "generated_at": 1787484620,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1070,7 +1070,7 @@
       "title": "牛客周赛 Round 158",
       "start_time": 1787482800,
       "end_time": 1787490000,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://ac.nowcoder.com/acm/contest/139659"
     },
     {
