@@ -1,5 +1,5 @@
 {
-  "generated_at": 1787487261,
+  "generated_at": 1787490340,
   "contests": [
     {
       "platform": "AtCoder",
@@ -256,14 +256,6 @@
       "end_time": 1785603900,
       "status": "finished",
       "url": "https://codeforces.com/contests/2248"
-    },
-    {
-      "platform": "Nowcoder",
-      "title": "牛客周赛 Round 155",
-      "start_time": 1785668400,
-      "end_time": 1785675600,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/138240"
     },
     {
       "platform": "AtCoder",
@@ -1062,7 +1054,7 @@
       "title": "牛客周赛 Round 158",
       "start_time": 1787482800,
       "end_time": 1787490000,
-      "status": "running",
+      "status": "finished",
       "url": "https://ac.nowcoder.com/acm/contest/139659"
     },
     {
