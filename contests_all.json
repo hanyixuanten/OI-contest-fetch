@@ -1,14 +1,6 @@
 {
-  "generated_at": 1787577555,
+  "generated_at": 1787580453,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Beginner Contest 468",
-      "start_time": 1784980800,
-      "end_time": 1784986800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/abc468"
-    },
     {
       "platform": "Codeforces",
       "title": "Codeforces Round 1112 (Div. 1)",
