@@ -1,5 +1,5 @@
 {
-  "generated_at": 1787565453,
+  "generated_at": 1787568475,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1074,6 +1074,22 @@
       "url": "https://atcoder.jp/contests/adt_easy_20260824_1"
     },
     {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/08/24 18:00start",
+      "start_time": 1787562000,
+      "end_time": 1787565600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260824_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/08/24 18:00start",
+      "start_time": 1787562000,
+      "end_time": 1787565600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260824_2"
+    },
+    {
       "platform": "Nowcoder",
       "title": "牛客练习赛156",
       "start_time": 1787914800,
@@ -1122,6 +1138,14 @@
       "url": "https://atcoder.jp/contests/arc228"
     },
     {
+      "platform": "Nowcoder",
+      "title": "牛客挑战赛91",
+      "start_time": 1788519600,
+      "end_time": 1788530400,
+      "status": "upcoming",
+      "url": "https://ac.nowcoder.com/acm/contest/139935"
+    },
+    {
       "platform": "AtCoder",
       "title": "AtCoder Regular Contest-- 229",
       "start_time": 1788609600,
@@ -1136,6 +1160,14 @@
       "end_time": 1788673800,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/abc474"
+    },
+    {
+      "platform": "Nowcoder",
+      "title": "牛客小白月赛137",
+      "start_time": 1789124400,
+      "end_time": 1789131600,
+      "status": "upcoming",
+      "url": "https://ac.nowcoder.com/acm/contest/139936"
     },
     {
       "platform": "AtCoder",
