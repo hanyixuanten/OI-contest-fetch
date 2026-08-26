@@ -1,22 +1,6 @@
 {
-  "generated_at": 1787737943,
+  "generated_at": 1787741196,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/07/27 18:00start",
-      "start_time": 1785142800,
-      "end_time": 1785146400,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260727_2"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/07/27 18:00start",
-      "start_time": 1785142800,
-      "end_time": 1785146400,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260727_2"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Weekday Contest 0121 Beta",
@@ -1114,6 +1098,22 @@
       "url": "https://atcoder.jp/contests/adt_easy_20260826_1"
     },
     {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/08/26 18:00start",
+      "start_time": 1787734800,
+      "end_time": 1787738400,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260826_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/08/26 18:00start",
+      "start_time": 1787734800,
+      "end_time": 1787738400,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260826_2"
+    },
+    {
       "platform": "Nowcoder",
       "title": "牛客练习赛156",
       "start_time": 1787914800,
@@ -1139,7 +1139,7 @@
     },
     {
       "platform": "Codeforces",
-      "title": "Codeforces Round (Div. 2)",
+      "title": "Codeforces Round 1118 (Div. 2)",
       "start_time": 1788014100,
       "end_time": 1788021300,
       "status": "upcoming",
