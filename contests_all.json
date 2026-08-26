@@ -1,5 +1,5 @@
 {
-  "generated_at": 1787702567,
+  "generated_at": 1787709187,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1224,6 +1224,14 @@
       "end_time": 1789914600,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/arc230"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "ALGO ARTIS Programming Contest 2026 September（AtCoder Heuristic Contest 072）",
+      "start_time": 1790330400,
+      "end_time": 1791194400,
+      "status": "upcoming",
+      "url": "https://atcoder.jp/contests/ahc072"
     }
   ]
 }
