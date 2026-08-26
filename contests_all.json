@@ -1,5 +1,5 @@
 {
-  "generated_at": 1787717203,
+  "generated_at": 1787719957,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1192,6 +1192,14 @@
       "end_time": 1788673800,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/abc474"
+    },
+    {
+      "platform": "Nowcoder",
+      "title": "牛客周赛 Round 160",
+      "start_time": 1788692400,
+      "end_time": 1788699600,
+      "status": "upcoming",
+      "url": "https://ac.nowcoder.com/acm/contest/139989"
     },
     {
       "platform": "Nowcoder",
