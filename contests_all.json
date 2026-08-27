@@ -1,46 +1,6 @@
 {
-  "generated_at": 1787800976,
+  "generated_at": 1787841288,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/07/28 16:00start",
-      "start_time": 1785222000,
-      "end_time": 1785225600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260728_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/07/28 16:00start",
-      "start_time": 1785222000,
-      "end_time": 1785225600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260728_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/07/28 18:00start",
-      "start_time": 1785229200,
-      "end_time": 1785232800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260728_2"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/07/28 18:00start",
-      "start_time": 1785229200,
-      "end_time": 1785232800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260728_2"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0122 Beta",
-      "start_time": 1785236400,
-      "end_time": 1785240000,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0122"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/29 16:00start",
@@ -1114,6 +1074,46 @@
       "url": "https://atcoder.jp/contests/awc0143"
     },
     {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/08/27 16:00start",
+      "start_time": 1787814000,
+      "end_time": 1787817600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260827_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/08/27 16:00start",
+      "start_time": 1787814000,
+      "end_time": 1787817600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260827_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/08/27 18:00start",
+      "start_time": 1787821200,
+      "end_time": 1787824800,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260827_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/08/27 18:00start",
+      "start_time": 1787821200,
+      "end_time": 1787824800,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260827_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Weekday Contest 0144 Beta",
+      "start_time": 1787828400,
+      "end_time": 1787832000,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/awc0144"
+    },
+    {
       "platform": "Nowcoder",
       "title": "牛客练习赛156",
       "start_time": 1787914800,
@@ -1248,6 +1248,22 @@
       "end_time": 1791194400,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/ahc072"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AAL Contest 001: Let's use segtree!",
+      "start_time": 1791777600,
+      "end_time": 1791795600,
+      "status": "upcoming",
+      "url": "https://atcoder.jp/contests/aalc001"
+    },
+    {
+      "platform": "Codeforces",
+      "title": "Codeforces Round (Div. 1 + Div. 2)",
+      "start_time": 1792247700,
+      "end_time": 1792258500,
+      "status": "upcoming",
+      "url": "https://codeforces.com/contests/2261"
     }
   ]
 }
