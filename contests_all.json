@@ -1,14 +1,6 @@
 {
-  "generated_at": 1787915673,
+  "generated_at": 1787952422,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0123 Beta",
-      "start_time": 1785322800,
-      "end_time": 1785326400,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0123"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/30 16:00start",
@@ -208,14 +200,6 @@
       "end_time": 1785862200,
       "status": "finished",
       "url": "https://codeforces.com/contests/2254"
-    },
-    {
-      "platform": "Nowcoder",
-      "title": "2026牛客暑期多校训练营6",
-      "start_time": 1785902400,
-      "end_time": 1785920400,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/133881"
     },
     {
       "platform": "AtCoder",
@@ -1114,11 +1098,19 @@
       "url": "https://atcoder.jp/contests/adt_easy_20260828_2"
     },
     {
+      "platform": "AtCoder",
+      "title": "AtCoder Weekday Contest 0145 Beta",
+      "start_time": 1787914800,
+      "end_time": 1787918400,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/awc0145"
+    },
+    {
       "platform": "Nowcoder",
       "title": "牛客练习赛156",
       "start_time": 1787914800,
       "end_time": 1787923800,
-      "status": "running",
+      "status": "finished",
       "url": "https://ac.nowcoder.com/acm/contest/139209"
     },
     {
