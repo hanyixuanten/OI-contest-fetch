@@ -1,38 +1,6 @@
 {
-  "generated_at": 1787973605,
+  "generated_at": 1787998442,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/07/30 16:00start",
-      "start_time": 1785394800,
-      "end_time": 1785398400,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260730_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/07/30 16:00start",
-      "start_time": 1785394800,
-      "end_time": 1785398400,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260730_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/07/30 18:00start",
-      "start_time": 1785402000,
-      "end_time": 1785405600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260730_2"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/07/30 18:00start",
-      "start_time": 1785402000,
-      "end_time": 1785405600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260730_2"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Weekday Contest 0124 Beta",
@@ -1115,10 +1083,10 @@
     },
     {
       "platform": "AtCoder",
-      "title": "13th Asprova Programming Contest（AtCoder Heuristic Contest 070）",
+      "title": "第13回 Asprova プログラミングコンテスト（AtCoder Heuristic Contest 070）",
       "start_time": 1787983200,
       "end_time": 1787997600,
-      "status": "upcoming",
+      "status": "finished",
       "url": "https://atcoder.jp/contests/ahc070"
     },
     {
