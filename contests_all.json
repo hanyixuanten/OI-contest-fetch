@@ -1,14 +1,6 @@
 {
-  "generated_at": 1787998442,
+  "generated_at": 1788016007,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0124 Beta",
-      "start_time": 1785409200,
-      "end_time": 1785412800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0124"
-    },
     {
       "platform": "AtCoder",
       "title": "AtCoder Daily Training ALL 2026/07/31 16:00start",
@@ -1094,7 +1086,7 @@
       "title": "AtCoder Beginner Contest 473",
       "start_time": 1788004800,
       "end_time": 1788010800,
-      "status": "upcoming",
+      "status": "finished",
       "url": "https://atcoder.jp/contests/abc473"
     },
     {
@@ -1102,7 +1094,7 @@
       "title": "Codeforces Round 1118 (Div. 2)",
       "start_time": 1788014100,
       "end_time": 1788021300,
-      "status": "upcoming",
+      "status": "running",
       "url": "https://codeforces.com/contests/2258"
     },
     {
