@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788094900,
+  "generated_at": 1788110505,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1056,6 +1056,14 @@
       "end_time": 1788094800,
       "status": "finished",
       "url": "https://ac.nowcoder.com/acm/contest/139660"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Regular Contest++ 228",
+      "start_time": 1788091200,
+      "end_time": 1788100200,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/arc228"
     },
     {
       "platform": "Nowcoder",
