@@ -1,38 +1,6 @@
 {
-  "generated_at": 1788074485,
+  "generated_at": 1788094900,
   "contests": [
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/07/31 16:00start",
-      "start_time": 1785481200,
-      "end_time": 1785484800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260731_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/07/31 16:00start",
-      "start_time": 1785481200,
-      "end_time": 1785484800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260731_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/07/31 18:00start",
-      "start_time": 1785488400,
-      "end_time": 1785492000,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260731_2"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/07/31 18:00start",
-      "start_time": 1785488400,
-      "end_time": 1785492000,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260731_2"
-    },
     {
       "platform": "AtCoder",
       "title": "RECRUIT 日本橋ハーフマラソン 2026夏（AtCoder Heuristic Contest 069）",
@@ -40,14 +8,6 @@
       "end_time": 1786356000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/ahc069"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0125 Beta",
-      "start_time": 1785495600,
-      "end_time": 1785499200,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0125"
     },
     {
       "platform": "AtCoder",
@@ -248,14 +208,6 @@
       "end_time": 1786034100,
       "status": "finished",
       "url": "https://codeforces.com/contests/2252"
-    },
-    {
-      "platform": "Nowcoder",
-      "title": "2026牛客暑期多校训练营7",
-      "start_time": 1786075200,
-      "end_time": 1786093200,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/133882"
     },
     {
       "platform": "AtCoder",
@@ -1102,16 +1054,8 @@
       "title": "牛客周赛 Round 159",
       "start_time": 1788087600,
       "end_time": 1788094800,
-      "status": "upcoming",
+      "status": "finished",
       "url": "https://ac.nowcoder.com/acm/contest/139660"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Regular Contest++ 228",
-      "start_time": 1788091200,
-      "end_time": 1788100200,
-      "status": "upcoming",
-      "url": "https://atcoder.jp/contests/arc228"
     },
     {
       "platform": "Nowcoder",
