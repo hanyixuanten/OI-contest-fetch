@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788137710,
+  "generated_at": 1788159422,
   "contests": [
     {
       "platform": "AtCoder",
@@ -8,14 +8,6 @@
       "end_time": 1786356000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/ahc069"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "CodeQUEEN 2026 決勝",
-      "start_time": 1785556800,
-      "end_time": 1785564000,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/codequeen2026-final-Public"
     },
     {
       "platform": "AtCoder",
