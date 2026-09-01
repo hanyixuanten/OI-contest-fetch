@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788221240,
+  "generated_at": 1788239948,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1154,6 +1154,22 @@
       "url": "https://atcoder.jp/contests/ahc071"
     },
     {
+      "platform": "Nowcoder",
+      "title": "牛客周赛 Round 161",
+      "start_time": 1789297200,
+      "end_time": 1789304400,
+      "status": "upcoming",
+      "url": "https://ac.nowcoder.com/acm/contest/140235"
+    },
+    {
+      "platform": "Nowcoder",
+      "title": "牛客练习赛157",
+      "start_time": 1789729200,
+      "end_time": 1789738200,
+      "status": "upcoming",
+      "url": "https://ac.nowcoder.com/acm/contest/140236"
+    },
+    {
       "platform": "AtCoder",
       "title": "AtCoder Regular Contest++ 230",
       "start_time": 1789905600,
@@ -1168,6 +1184,14 @@
       "end_time": 1791194400,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/ahc072"
+    },
+    {
+      "platform": "Nowcoder",
+      "title": "牛客挑战赛92",
+      "start_time": 1790334000,
+      "end_time": 1790344800,
+      "status": "upcoming",
+      "url": "https://ac.nowcoder.com/acm/contest/140237"
     },
     {
       "platform": "AtCoder",
