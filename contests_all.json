@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788448474,
+  "generated_at": 1788461110,
   "contests": [
     {
       "platform": "AtCoder",
@@ -8,14 +8,6 @@
       "end_time": 1786356000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/ahc069"
-    },
-    {
-      "platform": "Codeforces",
-      "title": "Codeforces Round 1114 (Div. 3)",
-      "start_time": 1785854100,
-      "end_time": 1785862200,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2254"
     },
     {
       "platform": "AtCoder",
