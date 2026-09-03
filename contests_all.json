@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788435583,
+  "generated_at": 1788448474,
   "contests": [
     {
       "platform": "AtCoder",
@@ -8,14 +8,6 @@
       "end_time": 1786356000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/ahc069"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0127 Beta",
-      "start_time": 1785841200,
-      "end_time": 1785844800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0127"
     },
     {
       "platform": "Codeforces",
@@ -1120,6 +1112,14 @@
       "end_time": 1788429600,
       "status": "finished",
       "url": "https://atcoder.jp/contests/adt_easy_20260903_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Weekday Contest 0149 Beta",
+      "start_time": 1788433200,
+      "end_time": 1788436800,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/awc0149"
     },
     {
       "platform": "Nowcoder",
