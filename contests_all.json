@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788533984,
+  "generated_at": 1788545917,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1176,6 +1176,22 @@
       "end_time": 1789220400,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/abc475"
+    },
+    {
+      "platform": "Codeforces",
+      "title": "Codeforces Round (Div. 1)",
+      "start_time": 1789223700,
+      "end_time": 1789234500,
+      "status": "upcoming",
+      "url": "https://codeforces.com/contests/2262"
+    },
+    {
+      "platform": "Codeforces",
+      "title": "Codeforces Round (Div. 2)",
+      "start_time": 1789223700,
+      "end_time": 1789234500,
+      "status": "upcoming",
+      "url": "https://codeforces.com/contests/2263"
     },
     {
       "platform": "AtCoder",
