@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788621604,
+  "generated_at": 1788629057,
   "contests": [
     {
       "platform": "AtCoder",
@@ -8,14 +8,6 @@
       "end_time": 1786356000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/ahc069"
-    },
-    {
-      "platform": "Codeforces",
-      "title": "Codeforces Round 1115 (Div. 2)",
-      "start_time": 1786026900,
-      "end_time": 1786034100,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2252"
     },
     {
       "platform": "AtCoder",
@@ -1086,7 +1078,7 @@
       "title": "Codeforces Round 1119 (Div. 3)",
       "start_time": 1788619500,
       "end_time": 1788627600,
-      "status": "running",
+      "status": "finished",
       "url": "https://codeforces.com/contests/2259"
     },
     {
