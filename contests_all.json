@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788610069,
+  "generated_at": 1788621604,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1074,11 +1074,19 @@
       "url": "https://ac.nowcoder.com/acm/contest/139935"
     },
     {
+      "platform": "AtCoder",
+      "title": "AtCoder Regular Contest-- 229",
+      "start_time": 1788609600,
+      "end_time": 1788616800,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/arc229"
+    },
+    {
       "platform": "Codeforces",
       "title": "Codeforces Round 1119 (Div. 3)",
-      "start_time": 1788618900,
-      "end_time": 1788627000,
-      "status": "upcoming",
+      "start_time": 1788619500,
+      "end_time": 1788627600,
+      "status": "running",
       "url": "https://codeforces.com/contests/2259"
     },
     {
