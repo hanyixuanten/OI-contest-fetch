@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788567708,
+  "generated_at": 1788583317,
   "contests": [
     {
       "platform": "AtCoder",
@@ -110,7 +110,7 @@
       "title": "UOJ Prime Round 2026",
       "start_time": 1786154400,
       "end_time": 1788573600,
-      "status": "running",
+      "status": "finished",
       "url": "https://uoj.ac/contest/112"
     },
     {
