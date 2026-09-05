@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788597559,
+  "generated_at": 1788610069,
   "contests": [
     {
       "platform": "AtCoder",
@@ -8,30 +8,6 @@
       "end_time": 1786356000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/ahc069"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/08/06 18:00start",
-      "start_time": 1786006800,
-      "end_time": 1786010400,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260806_2"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/08/06 18:00start",
-      "start_time": 1786006800,
-      "end_time": 1786010400,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260806_2"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0129 Beta",
-      "start_time": 1786014000,
-      "end_time": 1786017600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0129"
     },
     {
       "platform": "Codeforces",
@@ -1096,14 +1072,6 @@
       "end_time": 1788530400,
       "status": "finished",
       "url": "https://ac.nowcoder.com/acm/contest/139935"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Regular Contest-- 229",
-      "start_time": 1788609600,
-      "end_time": 1788616800,
-      "status": "upcoming",
-      "url": "https://atcoder.jp/contests/arc229"
     },
     {
       "platform": "Codeforces",
