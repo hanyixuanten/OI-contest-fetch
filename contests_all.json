@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788629057,
+  "generated_at": 1788636264,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1160,6 +1160,14 @@
       "end_time": 1789304400,
       "status": "upcoming",
       "url": "https://ac.nowcoder.com/acm/contest/140235"
+    },
+    {
+      "platform": "Codeforces",
+      "title": "Codeforces Round (Div. 2)",
+      "start_time": 1789319100,
+      "end_time": 1789326300,
+      "status": "upcoming",
+      "url": "https://codeforces.com/contests/2264"
     },
     {
       "platform": "Nowcoder",
