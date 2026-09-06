@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788712116,
+  "generated_at": 1788719752,
   "contests": [
     {
       "platform": "AtCoder",
@@ -8,14 +8,6 @@
       "end_time": 1786356000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/ahc069"
-    },
-    {
-      "platform": "Codeforces",
-      "title": "Educational Codeforces Round 193 (Rated for Div. 2)",
-      "start_time": 1786113300,
-      "end_time": 1786120500,
-      "status": "finished",
-      "url": "https://codeforces.com/contests/2253"
     },
     {
       "platform": "UOJ",
