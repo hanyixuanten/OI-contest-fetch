@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788691736,
+  "generated_at": 1788702553,
   "contests": [
     {
       "platform": "AtCoder",
@@ -8,14 +8,6 @@
       "end_time": 1786356000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/ahc069"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0130 Beta",
-      "start_time": 1786100400,
-      "end_time": 1786104000,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0130"
     },
     {
       "platform": "Codeforces",
@@ -152,14 +144,6 @@
       "end_time": 1786449600,
       "status": "finished",
       "url": "https://atcoder.jp/contests/awc0132"
-    },
-    {
-      "platform": "Nowcoder",
-      "title": "2026牛客暑期多校训练营8",
-      "start_time": 1786507200,
-      "end_time": 1786525200,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/133883"
     },
     {
       "platform": "AtCoder",
@@ -1070,7 +1054,7 @@
       "title": "牛客周赛 Round 160",
       "start_time": 1788692400,
       "end_time": 1788699600,
-      "status": "upcoming",
+      "status": "finished",
       "url": "https://ac.nowcoder.com/acm/contest/139989"
     },
     {
