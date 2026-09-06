@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788674560,
+  "generated_at": 1788691736,
   "contests": [
     {
       "platform": "AtCoder",
@@ -8,38 +8,6 @@
       "end_time": 1786356000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/ahc069"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/08/07 16:00start",
-      "start_time": 1786086000,
-      "end_time": 1786089600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260807_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/08/07 16:00start",
-      "start_time": 1786086000,
-      "end_time": 1786089600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260807_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/08/07 18:00start",
-      "start_time": 1786093200,
-      "end_time": 1786096800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260807_2"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/08/07 18:00start",
-      "start_time": 1786093200,
-      "end_time": 1786096800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260807_2"
     },
     {
       "platform": "AtCoder",
@@ -1080,6 +1048,22 @@
       "end_time": 1788627600,
       "status": "finished",
       "url": "https://codeforces.com/contests/2259"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Beginner Contest 474",
+      "start_time": 1788667800,
+      "end_time": 1788673800,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/abc474"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "第七回日本最強プログラマー学生選手権～Advance～",
+      "start_time": 1788667800,
+      "end_time": 1788673800,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/jsc2026advance-final"
     },
     {
       "platform": "Nowcoder",
