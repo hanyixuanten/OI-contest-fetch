@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788828243,
+  "generated_at": 1788844868,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1200,6 +1200,14 @@
       "end_time": 1790523000,
       "status": "upcoming",
       "url": "https://atcoder.jp/contests/agc078"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Beginner Contest 478",
+      "start_time": 1791028800,
+      "end_time": 1791034800,
+      "status": "upcoming",
+      "url": "https://atcoder.jp/contests/abc478"
     },
     {
       "platform": "AtCoder",
