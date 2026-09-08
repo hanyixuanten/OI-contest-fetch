@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788861101,
+  "generated_at": 1788875823,
   "contests": [
     {
       "platform": "AtCoder",
@@ -1098,6 +1098,30 @@
       "url": "https://atcoder.jp/contests/adt_easy_20260908_1"
     },
     {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/09/08 18:00start",
+      "start_time": 1788858000,
+      "end_time": 1788861600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260908_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/09/08 18:00start",
+      "start_time": 1788858000,
+      "end_time": 1788861600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260908_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Weekday Contest 0152 Beta",
+      "start_time": 1788865200,
+      "end_time": 1788868800,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/awc0152"
+    },
+    {
       "platform": "Codeforces",
       "title": "Educational Codeforces Round 194 (Rated for Div. 2)",
       "start_time": 1788878100,
@@ -1235,7 +1259,7 @@
     },
     {
       "platform": "AtCoder",
-      "title": "AtCoder Regular Contest 232 ++",
+      "title": "AtCoder Regular Contest++ 232",
       "start_time": 1791633600,
       "end_time": 1791642600,
       "status": "upcoming",
