@@ -1,5 +1,5 @@
 {
-  "generated_at": 1788952521,
+  "generated_at": 1788966585,
   "contests": [
     {
       "platform": "UOJ",
@@ -16,14 +16,6 @@
       "end_time": 1788667200,
       "status": "finished",
       "url": "https://uoj.ac/contest/113"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0131 Beta",
-      "start_time": 1786359600,
-      "end_time": 1786363200,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0131"
     },
     {
       "platform": "AtCoder",
@@ -1096,6 +1088,14 @@
       "end_time": 1788948000,
       "status": "finished",
       "url": "https://atcoder.jp/contests/adt_easy_20260909_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Weekday Contest 0153 Beta",
+      "start_time": 1788951600,
+      "end_time": 1788955200,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/awc0153"
     },
     {
       "platform": "Nowcoder",
