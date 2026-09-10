@@ -1,5 +1,5 @@
 {
-  "generated_at": 1789038640,
+  "generated_at": 1789052520,
   "contests": [
     {
       "platform": "UOJ",
@@ -16,14 +16,6 @@
       "end_time": 1788667200,
       "status": "finished",
       "url": "https://uoj.ac/contest/113"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0132 Beta",
-      "start_time": 1786446000,
-      "end_time": 1786449600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0132"
     },
     {
       "platform": "AtCoder",
@@ -1098,6 +1090,14 @@
       "url": "https://atcoder.jp/contests/adt_easy_20260910_2"
     },
     {
+      "platform": "AtCoder",
+      "title": "AtCoder Weekday Contest 0154 Beta",
+      "start_time": 1789038000,
+      "end_time": 1789041600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/awc0154"
+    },
+    {
       "platform": "Nowcoder",
       "title": "牛客小白月赛137",
       "start_time": 1789124400,
@@ -1115,7 +1115,7 @@
     },
     {
       "platform": "Codeforces",
-      "title": "Codeforces Round (Div. 1)",
+      "title": "Codeforces Round 1120 (Div. 1)",
       "start_time": 1789223700,
       "end_time": 1789234500,
       "status": "upcoming",
@@ -1123,7 +1123,7 @@
     },
     {
       "platform": "Codeforces",
-      "title": "Codeforces Round (Div. 2)",
+      "title": "Codeforces Round 1120 (Div. 2)",
       "start_time": 1789223700,
       "end_time": 1789234500,
       "status": "upcoming",
@@ -1147,7 +1147,7 @@
     },
     {
       "platform": "Codeforces",
-      "title": "Codeforces Round (Div. 2)",
+      "title": "Codeforces Round 1121 (Div. 2)",
       "start_time": 1789319100,
       "end_time": 1789326300,
       "status": "upcoming",
