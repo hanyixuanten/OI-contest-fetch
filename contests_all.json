@@ -1,5 +1,5 @@
 {
-  "generated_at": 1789120975,
+  "generated_at": 1789136426,
   "contests": [
     {
       "platform": "UOJ",
@@ -16,14 +16,6 @@
       "end_time": 1788667200,
       "status": "finished",
       "url": "https://uoj.ac/contest/113"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Weekday Contest 0133 Beta",
-      "start_time": 1786532400,
-      "end_time": 1786536000,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/awc0133"
     },
     {
       "platform": "AtCoder",
@@ -64,14 +56,6 @@
       "end_time": 1786622400,
       "status": "finished",
       "url": "https://atcoder.jp/contests/awc0134"
-    },
-    {
-      "platform": "Nowcoder",
-      "title": "2026牛客暑期多校训练营9",
-      "start_time": 1786680000,
-      "end_time": 1786698000,
-      "status": "finished",
-      "url": "https://ac.nowcoder.com/acm/contest/133884"
     },
     {
       "platform": "AtCoder",
@@ -1082,11 +1066,35 @@
       "url": "https://atcoder.jp/contests/adt_easy_20260911_1"
     },
     {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/09/11 18:00start",
+      "start_time": 1789117200,
+      "end_time": 1789120800,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260911_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/09/11 18:00start",
+      "start_time": 1789117200,
+      "end_time": 1789120800,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260911_2"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Weekday Contest 0155 Beta",
+      "start_time": 1789124400,
+      "end_time": 1789128000,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/awc0155"
+    },
+    {
       "platform": "Nowcoder",
       "title": "牛客小白月赛137",
       "start_time": 1789124400,
       "end_time": 1789131600,
-      "status": "upcoming",
+      "status": "finished",
       "url": "https://ac.nowcoder.com/acm/contest/139936"
     },
     {
