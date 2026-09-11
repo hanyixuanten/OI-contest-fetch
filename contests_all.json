@@ -1,5 +1,5 @@
 {
-  "generated_at": 1789105870,
+  "generated_at": 1789120975,
   "contests": [
     {
       "platform": "UOJ",
@@ -16,38 +16,6 @@
       "end_time": 1788667200,
       "status": "finished",
       "url": "https://uoj.ac/contest/113"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/08/12 16:00start",
-      "start_time": 1786518000,
-      "end_time": 1786521600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260812_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/08/12 16:00start",
-      "start_time": 1786518000,
-      "end_time": 1786521600,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260812_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/08/12 18:00start",
-      "start_time": 1786525200,
-      "end_time": 1786528800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260812_2"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/08/12 18:00start",
-      "start_time": 1786525200,
-      "end_time": 1786528800,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260812_2"
     },
     {
       "platform": "AtCoder",
@@ -1096,6 +1064,22 @@
       "end_time": 1789041600,
       "status": "finished",
       "url": "https://atcoder.jp/contests/awc0154"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training ALL 2026/09/11 16:00start",
+      "start_time": 1789110000,
+      "end_time": 1789113600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_all_20260911_1"
+    },
+    {
+      "platform": "AtCoder",
+      "title": "AtCoder Daily Training EASY 2026/09/11 16:00start",
+      "start_time": 1789110000,
+      "end_time": 1789113600,
+      "status": "finished",
+      "url": "https://atcoder.jp/contests/adt_easy_20260911_1"
     },
     {
       "platform": "Nowcoder",
