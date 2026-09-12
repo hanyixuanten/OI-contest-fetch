@@ -1,5 +1,5 @@
 {
-  "generated_at": 1789189068,
+  "generated_at": 1789204344,
   "contests": [
     {
       "platform": "UOJ",
@@ -16,22 +16,6 @@
       "end_time": 1788667200,
       "status": "finished",
       "url": "https://uoj.ac/contest/113"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training ALL 2026/08/13 16:00start",
-      "start_time": 1786604400,
-      "end_time": 1786608000,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_all_20260813_1"
-    },
-    {
-      "platform": "AtCoder",
-      "title": "AtCoder Daily Training EASY 2026/08/13 16:00start",
-      "start_time": 1786604400,
-      "end_time": 1786608000,
-      "status": "finished",
-      "url": "https://atcoder.jp/contests/adt_easy_20260813_1"
     },
     {
       "platform": "AtCoder",
