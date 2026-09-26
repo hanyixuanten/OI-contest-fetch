@@ -1,5 +1,5 @@
 {
-  "generated_at": 1790434786,
+  "generated_at": 1790447440,
   "contests": [
     {
       "platform": "UOJ",
@@ -1118,7 +1118,7 @@
       "title": "Codeforces Round 1124 (Div. 1)",
       "start_time": 1790433300,
       "end_time": 1790442300,
-      "status": "running",
+      "status": "finished",
       "url": "https://codeforces.com/contests/2268"
     },
     {
@@ -1126,7 +1126,7 @@
       "title": "Codeforces Round 1124 (Div. 2)",
       "start_time": 1790433300,
       "end_time": 1790442300,
-      "status": "running",
+      "status": "finished",
       "url": "https://codeforces.com/contests/2269"
     },
     {
